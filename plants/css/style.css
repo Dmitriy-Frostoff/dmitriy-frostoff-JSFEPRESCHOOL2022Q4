@@ -1,0 +1,244 @@
+* {
+    /* Position */
+
+    /* block-model */
+    box-sizing: border-box;
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+html {
+    /* Position */
+
+    /* block-model */
+    scroll-behavior: smooth;
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+body {
+    /* Position */
+
+    /* block-model */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 0;
+
+    /* Typography */
+    
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.main {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.main-container {
+    /* Position */
+
+    /* block-model */
+    display: flex;
+    flex-wrap: wrap;
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.container {
+    /* Position */
+
+    /* block-model */
+    max-width: 1440px;
+    margin: 0 auto;
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+header {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.main-title{
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+  
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+nav {
+    /* Position */
+
+    /* block-model */
+    
+
+    /* Typography */
+    
+    
+    /* Decoration */
+    
+    /* Animation */
+
+    /* Various */
+
+}
+
+.nav-list{
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+
+    /* Decoration */
+    
+    /* Animation */
+
+    /* Various */
+
+}
+
+
+.nav-item {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+    
+    /* Animation */
+
+    /* Various */
+
+}
+
+.nav-link {
+    /* Position */
+
+    /* block-model */
+    
+    
+    /* Typography */
+    
+    /* Decoration */
+    
+
+    /* Animation */
+    
+
+    /* Various */
+
+}
+
+.nav-link:link {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+    
+
+}
+
+.nav-link:visited {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    
+}
+
+.nav-link:hover {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    
+}
+
+
+.footer-rsschool-logo {
+    /* Position */
+    
+    /* block-model */
+    width: 120px;
+    height: 35px;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
