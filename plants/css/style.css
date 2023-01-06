@@ -264,7 +264,7 @@ nav {
     /* Decoration */
     text-decoration: none;
     transition-property: all;
-    transition-duration: 0.5s
+    transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
     /* Animation */
@@ -490,12 +490,32 @@ nav {
     /* Position */
 
     /* block-model */
+    display: block;
     width: 158px;
     height: 44px;
     margin-top: -1px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: -4px;
+    /* Typography */
+
+    /* Decoration */
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    /* Animation */
+
+    /* Various */
+
+}
+.welcome-button-link {
+    /* Position */
+
+    /* block-model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -504,9 +524,41 @@ nav {
     line-height: 20px;
     color: #000000;
     text-transform: uppercase;
+    text-decoration: none;
     /* Decoration */
-    border: 2px solid #E06733;
-    border-radius: 10px;
+    
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+.welcome-button-link:hover {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    background-color: #D6E7D2;
+
+    /* Animation */
+
+    /* Various */
+
+}
+.welcome-button-link:visited {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    color:#6d6c6c;
+    /* Decoration */
+
     /* Animation */
 
     /* Various */
