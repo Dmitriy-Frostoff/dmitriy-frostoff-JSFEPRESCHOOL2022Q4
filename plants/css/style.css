@@ -35,7 +35,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     margin: 0 auto;
     padding: 0;
 
@@ -71,20 +70,6 @@ body {
     /* block-model */
     display: flex;
     flex-wrap: wrap;
-    /* Typography */
-
-    /* Decoration */
-
-    /* Animation */
-
-    /* Various */
-
-}
-
-.container {
-    /* Position */
-
-    /* block-model */
     max-width: 1440px;
     margin: 0 auto;
     /* Typography */
@@ -97,51 +82,40 @@ body {
 
 }
 
+
+/* Header start*/
+
 header {
     /* Position */
 
     /* block-model */
-    width: 1440px;
-    height: 134px;
+    
     /* Typography */
     font-family: 'Inika', serif;
+    font-weight: 400;
     font-size: 16px;
     color: #010201;
     /* Decoration */
-    background-color: #EDF2EC;
+    
     /* Animation */
 
     /* Various */
 
 }
 
-.main-title{
+.header-wrapper{
     /* Position */
 
     /* block-model */
-
-    /* Typography */
-  
-    /* Decoration */
-
-    /* Animation */
-
-    /* Various */
-
-}
-.navbar-wrapper{
-    /* Position */
-
-
-    /* block-model */
+    min-width: 1440px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 1220px;
-    height: 50px;
+   
     /* Typography */
   
     /* Decoration */
-
+    background-color: #EDF2EC;
     /* Animation */
 
     /* Various */
@@ -154,12 +128,9 @@ nav {
     /* block-model */
     display: flex;
     justify-content: flex-end;
-    width: 452px;
-    height: 50px;
-    margin-top: 42px;
-    margin-right: 109px;
+    margin-top: 27px;
+    margin-right: 112px;
     margin-bottom: 42px;
-    margin-left: 13px;
 
     /* Typography */
     
@@ -177,12 +148,12 @@ nav {
     /* block-model */
     display: flex;
     justify-content: flex-end;
-    width: 79px;
-    height: 21px;
-    margin-top: 52px;
+    /* width: 79px;
+    height: 21px; */
+    margin-top: 51px;
     margin-right: 689px;
     margin-bottom: 61px;
-    margin-left: 111px;
+    margin-left: 110px;
     align-items: baseline;
     /* Typography */
 
@@ -333,7 +304,7 @@ nav {
     /* Typography */
     font-style: normal;
     font-weight: 400;
-    color: gray;
+    color: #010201;
     /* Decoration */
 
     /* Animation */
@@ -360,6 +331,189 @@ nav {
 
 }
 
+/* Header end */
+
+/* Welcome section start */
+
+.welcome {
+    /* Position */
+
+    /* block-model */
+    /* width: 1440px;
+    height: 532px; */
+    /* Typography */
+  
+    /* Decoration */
+    
+    /* Animation */
+
+    /* Various */
+
+}
+
+.welcome-container {
+    /* Position */
+
+    /* block-model */
+    min-width: 1440px;
+    display: flex;
+    
+    /* margin-top: 62px;
+    margin-right: 109px;
+    margin-bottom: 62px;
+    margin-left: 109px; */
+
+    /* Typography */
+  
+    /* Decoration */
+    background-color: #EDF2EC;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.leaf {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+  
+    /* Decoration */
+    background-color: #EDF2EC;
+    /* Animation */
+
+    /* Various */
+
+}
+.welcome-leaf {
+    /* Position */
+
+    /* block-model */
+    width: 462px;
+    height: 423px;
+    margin-top: 36px;
+    margin-right: 224px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+
+    /* Typography */
+  
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.welcome-content-wrapper {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+  
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.welcome-title {
+    /* Position */
+
+    /* block-model */
+    margin-top: 81px;
+    margin-right: 109px;
+    margin-bottom: 42px;
+    margin-left: -4px;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.welcome-title-span {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+    color: #499A18;
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+
+
+.welcome-content {
+    /* Position */
+
+    /* block-model */
+    margin-top: 44px;
+    margin-right: 123px;
+    margin-bottom: 48px;
+    margin-left: -4px;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.welcome-button {
+    /* Position */
+
+    /* block-model */
+    width: 158px;
+    height: 44px;
+    margin-top: -1px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: -4px;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    text-transform: uppercase;
+    /* Decoration */
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    /* Animation */
+
+    /* Various */
+
+}
+
+/* Welcome section end */
 
 .footer-rsschool-logo {
     /* Position */
