@@ -344,9 +344,6 @@ header {
     margin: 0 auto;
     
     /* margin-top: 62px;
-    margin-right: 109px;
-    margin-bottom: 62px;
-    margin-left: 109px; */
 
     /* Typography */
   
@@ -544,6 +541,168 @@ header {
 }
 
 /* Welcome section end */
+
+/* About-us section start */
+.about {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    background: #FFFFFF;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.about-container {
+    /* Position */
+    
+    /* block-model */
+    max-width: 1222px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.about-content-wrapper {
+    /* Position */
+    
+    /* block-model */
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 99px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.about-title {
+    /* Position */
+    
+    /* block-model */
+    width: 70%;
+    margin: 0px;
+    /* Typography */
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.about-title-span {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #E06733;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.about-content {
+    /* Position */
+    
+    /* block-model */
+    margin: 0px;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    white-space: break-spaces;
+    color: #636060;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.about-houseplant-wrapper {
+    /* Position */
+    
+    /* block-model */
+    width: 37.970540%;
+    margin-top: 95px;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.about-houseplant-img {
+    /* Position */
+    
+    /* block-model */
+    width: 464px;
+    height: 479px;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+
+
+/* About-us section end */
+
 
 .footer-rsschool-logo {
     /* Position */
