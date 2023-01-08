@@ -56,6 +56,9 @@ body {
     /* Typography */
     font-family: 'Inter', sans-serif;
     font-family: 'Inika', serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #010201;
     /* Decoration */
 
     /* Animation */
@@ -68,10 +71,8 @@ body {
     /* Position */
 
     /* block-model */
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1440px;
     margin: 0 auto;
+
     /* Typography */
 
     /* Decoration */
@@ -96,7 +97,7 @@ header {
     font-size: 16px;
     color: #010201;
     /* Decoration */
-    
+    background-color: #EDF2EC;
     /* Animation */
 
     /* Various */
@@ -107,15 +108,17 @@ header {
     /* Position */
 
     /* block-model */
-    min-width: 1440px;
-    margin: 0 auto;
+    max-width: 1222px;
     display: flex;
     justify-content: space-between;
-   
+    align-items: baseline;
+    margin: 0 auto;
+    display: flex;
+    
     /* Typography */
   
     /* Decoration */
-    background-color: #EDF2EC;
+    
     /* Animation */
 
     /* Various */
@@ -126,11 +129,7 @@ nav {
     /* Position */
 
     /* block-model */
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 27px;
-    margin-right: 112px;
-    margin-bottom: 42px;
+    margin-top: 43px;
 
     /* Typography */
     
@@ -147,14 +146,12 @@ nav {
     
     /* block-model */
     display: flex;
-    justify-content: flex-end;
-    /* width: 79px;
-    height: 21px; */
-    margin-top: 51px;
-    margin-right: 689px;
-    margin-bottom: 61px;
-    margin-left: 110px;
+    justify-content: space-between;
+    margin-bottom: 17px;
     align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
     /* Typography */
 
     /* Decoration */
@@ -171,7 +168,7 @@ nav {
     /* block-model */
     width: 21px;
     height: 21px;
-    margin-right: 1px;
+    margin-right: 2px;
 
     /* Typography */
 
@@ -204,10 +201,10 @@ nav {
     
     /* block-model */
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    column-gap: 47px;
+    align-items: flex-end;
+    margin: 0;
     padding: 0;
-
     /* Typography */
 
     /* Decoration */
@@ -223,25 +220,7 @@ nav {
     /* Position */
 
     /* block-model */
-    margin-right: 46px;
     
-    /* Typography */
-    line-height: 50px;
-
-    /* Decoration */
-    
-    /* Animation */
-
-    /* Various */
-
-}
-
-.nav-item:last-child {
-    /* Position */
-
-    /* block-model */
-    margin-right: 0px;
-
     /* Typography */
     line-height: 50px;
 
@@ -317,7 +296,7 @@ nav {
     /* Position */
     
     /* block-model */
-    
+
     /* Typography */
     font-style: normal;
     font-weight: 700;
@@ -339,12 +318,11 @@ nav {
     /* Position */
 
     /* block-model */
-    /* width: 1440px;
-    height: 532px; */
+   
     /* Typography */
   
     /* Decoration */
-    
+    background-color: #EDF2EC;
     /* Animation */
 
     /* Various */
@@ -355,8 +333,13 @@ nav {
     /* Position */
 
     /* block-model */
-    min-width: 1440px;
+    max-width: 1222px;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 219px;
     
     /* margin-top: 62px;
     margin-right: 109px;
@@ -366,7 +349,7 @@ nav {
     /* Typography */
   
     /* Decoration */
-    background-color: #EDF2EC;
+    
     /* Animation */
 
     /* Various */
@@ -393,10 +376,10 @@ nav {
     /* block-model */
     width: 462px;
     height: 423px;
-    margin-top: 36px;
-    margin-right: 224px;
+    margin-top: 94px;
+    margin-right: 0px;
     margin-bottom: 50px;
-    margin-left: 100px;
+    margin-left: -8px;
 
     /* Typography */
   
@@ -412,7 +395,11 @@ nav {
     /* Position */
 
     /* block-model */
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 63px;
+    
     /* Typography */
   
     /* Decoration */
@@ -427,10 +414,10 @@ nav {
     /* Position */
 
     /* block-model */
-    margin-top: 81px;
-    margin-right: 109px;
-    margin-bottom: 42px;
-    margin-left: -4px;
+    margin-top: 44px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -467,10 +454,10 @@ nav {
     /* Position */
 
     /* block-model */
-    margin-top: 44px;
-    margin-right: 123px;
-    margin-bottom: 48px;
-    margin-left: -4px;
+    margin-top: -19px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -493,29 +480,10 @@ nav {
     display: block;
     width: 158px;
     height: 44px;
-    margin-top: -1px;
+    margin-top: -16px;
     margin-right: 0px;
     margin-bottom: 0px;
-    margin-left: -4px;
-    /* Typography */
-
-    /* Decoration */
-    border: 2px solid #E06733;
-    border-radius: 10px;
-    /* Animation */
-
-    /* Various */
-
-}
-.welcome-button-link {
-    /* Position */
-
-    /* block-model */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-left: 0px;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -526,37 +494,38 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
     /* Decoration */
-    
+    border: 2px solid #E06733;
+    border-radius: 10px;
     /* Animation */
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
     /* Various */
-
 }
-.welcome-button-link:hover {
+
+.welcome-button:hover, .welcome-button:active {
     /* Position */
 
     /* block-model */
     
     /* Typography */
-    
+    color:#FFFFFF;
     /* Decoration */
-    background-color: #D6E7D2;
-
+    background: #E06733;
     /* Animation */
 
     /* Various */
 
 }
-.welcome-button-link:visited {
+
+.welcome-button:visited {
     /* Position */
 
     /* block-model */
     
     /* Typography */
-    color:#6d6c6c;
+    opacity: 0.35;
     /* Decoration */
 
     /* Animation */
