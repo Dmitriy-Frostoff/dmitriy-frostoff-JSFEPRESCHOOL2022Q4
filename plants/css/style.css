@@ -110,10 +110,10 @@ header {
     /* block-model */
     max-width: 1222px;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
     margin: 0 auto;
-    display: flex;
     
     /* Typography */
   
@@ -125,10 +125,11 @@ header {
 
 }
 
-nav {
+.nav {
     /* Position */
 
     /* block-model */
+    width: 36.988543%;
     margin-top: 43px;
 
     /* Typography */
@@ -145,13 +146,13 @@ nav {
     /* Position */
     
     /* block-model */
+    width: 6.478723%;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 17px;
-    align-items: baseline;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
+    justify-content: flex-start;
+    align-items: baseline;
     /* Typography */
 
     /* Decoration */
@@ -201,7 +202,8 @@ nav {
     
     /* block-model */
     display: flex;
-    column-gap: 47px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: flex-end;
     margin: 0;
     padding: 0;
@@ -334,12 +336,12 @@ nav {
 
     /* block-model */
     max-width: 1222px;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: nowrap;
-    column-gap: 219px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
     
     /* margin-top: 62px;
     margin-right: 109px;
@@ -360,7 +362,7 @@ nav {
     /* Position */
 
     /* block-model */
-
+    width: 36.726678%;
     /* Typography */
   
     /* Decoration */
@@ -377,9 +379,9 @@ nav {
     width: 462px;
     height: 423px;
     margin-top: 94px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 50px;
-    margin-left: -8px;
+    margin-left: 0;
 
     /* Typography */
   
@@ -395,10 +397,18 @@ nav {
     /* Position */
 
     /* block-model */
+    width: 44.926350%;
+    height: 340px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    row-gap: 63px;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 46px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     
     /* Typography */
   
@@ -414,7 +424,7 @@ nav {
     /* Position */
 
     /* block-model */
-    margin-top: 44px;
+    margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -454,7 +464,7 @@ nav {
     /* Position */
 
     /* block-model */
-    margin-top: -19px;
+    margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -477,10 +487,9 @@ nav {
     /* Position */
 
     /* block-model */
-    display: block;
     width: 158px;
     height: 44px;
-    margin-top: -16px;
+    margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
