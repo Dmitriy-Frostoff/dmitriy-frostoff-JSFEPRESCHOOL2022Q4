@@ -378,7 +378,7 @@ nav {
     height: 423px;
     margin-top: 94px;
     margin-right: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
     margin-left: -8px;
 
     /* Typography */
@@ -414,7 +414,7 @@ nav {
     /* Position */
 
     /* block-model */
-    margin-top: 93px;
+    margin-top: 44px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -485,25 +485,6 @@ nav {
     margin-bottom: 0px;
     margin-left: 0px;
     /* Typography */
-
-    /* Decoration */
-    border: 2px solid #E06733;
-    border-radius: 10px;
-    /* Animation */
-
-    /* Various */
-
-}
-.welcome-button-link {
-    /* Position */
-
-    /* block-model */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    /* Typography */
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -513,37 +494,38 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
     /* Decoration */
-    
+    border: 2px solid #E06733;
+    border-radius: 10px;
     /* Animation */
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
     /* Various */
-
 }
-.welcome-button-link:hover {
+
+.welcome-button:hover, .welcome-button:active {
     /* Position */
 
     /* block-model */
     
     /* Typography */
-    
+    color:#FFFFFF;
     /* Decoration */
-    background-color: #D6E7D2;
-
+    background: #E06733;
     /* Animation */
 
     /* Various */
 
 }
-.welcome-button-link:visited {
+
+.welcome-button:visited {
     /* Position */
 
     /* block-model */
     
     /* Typography */
-    color:#6d6c6c;
+    opacity: 0.35;
     /* Decoration */
 
     /* Animation */
