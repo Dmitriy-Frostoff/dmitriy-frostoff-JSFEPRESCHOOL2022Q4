@@ -108,7 +108,7 @@ header {
     /* Position */
 
     /* block-model */
-    max-width: 1222px;
+    max-width: 76.375em;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -335,7 +335,7 @@ header {
     /* Position */
 
     /* block-model */
-    max-width: 1222px;
+    max-width: 76.375em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -421,10 +421,10 @@ header {
     /* Position */
 
     /* block-model */
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -462,10 +462,10 @@ header {
 
     /* block-model */
     width: 93%;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -487,10 +487,10 @@ header {
     /* block-model */
     width: 158px;
     height: 44px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -511,7 +511,8 @@ header {
     /* Various */
 }
 
-.welcome-button:hover, .welcome-button:active {
+.welcome-button:hover,
+.welcome-button:active {
     /* Position */
 
     /* block-model */
@@ -543,7 +544,7 @@ header {
 
 /* Welcome section end */
 
-/* About-us section start */
+/* About section start */
 .about {
     /* Position */
     
@@ -563,7 +564,7 @@ header {
     /* Position */
     
     /* block-model */
-    max-width: 1222px;
+    max-width: 76.375em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -592,7 +593,7 @@ header {
     align-content: flex-start;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 99px;
+    margin-top: 8px;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -611,7 +612,7 @@ header {
     
     /* block-model */
     width: 70%;
-    margin: 0px;
+    margin: 0;
     /* Typography */
     font-family: 'Inika';
     font-style: normal;
@@ -651,7 +652,7 @@ header {
     /* Position */
     
     /* block-model */
-    margin: 0px;
+    margin: 0;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -674,6 +675,7 @@ header {
     /* block-model */
     width: 38%;
     margin-top: 95px;
+    margin-bottom: 90px;
     /* Typography */
     
     /* Decoration */
@@ -700,10 +702,353 @@ header {
 
 }
 
+/* About section end */
+
+/* service section start */
+
+.service {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    background: #EDF2EC;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.section-container {
+    /* Position */
+    
+    /* block-model */
+    max-width: 76.375em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.service-options {
+    /* Position */
+    
+    /* block-model */
+    max-width: 62.9375em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 40px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.service-title {
+    /* Position */
+    
+    /* block-model */
+    width: 7.65em;
+    margin: 0;
+    /* Typography */
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    white-space: normal;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.service-button-wrapper {
+    /* Position */
+    
+    /* block-model */
+    width: 35.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 142px;
+    
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.service-button {
+    /* Position */
+
+    /* block-model */
+    width: 161px;
+    height: 50px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    text-decoration: none;
+    /* Decoration */
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+}
+
+.service-button:hover,
+.service-button:active {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    color:#FFFFFF;
+    /* Decoration */
+    background: #E06733;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.service-button:visited {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    opacity: 0.35;
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.service-content-container {
+    /* Position */
+    
+    /* block-model */
+    max-width: 77em;
+    height: 59.6em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+    margin-bottom: 126px;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.service-item {
+    /* Position */
+    
+    /* block-model */
+    width: 27%;
+    height: 450px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content:center;
+    align-items:flex-start;
+    
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.service-link-wrapper {
+    /* Position */
+    
+    /* block-model */
+        
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.service-link {
+    /* Position */
+    
+    /* block-model */
+        
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+
+.service-link:hover,
+.service-link:active {
+    /* Position */
+    
+    /* block-model */
+        
+    /* Typography */
+    
+    /* Decoration */
+    opacity: 0.45;
+    /* Animation */
+    
+    /* Various */
+
+}
 
 
-/* About-us section end */
+.service-img {
+    /* Position */
+    
+    /* block-model */
+    width: 329px;
+    height: 350px;
+    display: block;
+    margin: 0;
+    /* Typography */
+    
+    /* Decoration */
+    border-radius: 20px 20px 0px 0px;
+    /* Animation */
+    
+    /* Various */
 
+}
+
+.service-definition-wrapper {
+    /* Position */
+    
+    /* block-model */
+    width: 330px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* Typography */
+    
+    /* Decoration */
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.service-subtitle {
+    /* Position */
+    
+    /* block-model */
+    margin-top: -6px;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+
+.service-definition {
+    /* Position */
+    
+    /* block-model */
+    margin-top: -25px;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+/* service section end */
 
 .footer-rsschool-logo {
     /* Position */
