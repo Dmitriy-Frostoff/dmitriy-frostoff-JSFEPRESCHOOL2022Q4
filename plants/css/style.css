@@ -721,7 +721,7 @@ header {
 
 }
 
-.section-container {
+.service-container {
     /* Position */
     
     /* block-model */
@@ -883,7 +883,7 @@ header {
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 80px;
-    margin-bottom: 126px;
+    margin-bottom: 122px;
     /* Typography */
     
     /* Decoration */
@@ -1049,6 +1049,349 @@ header {
 }
 
 /* service section end */
+
+/* Prices section start */
+.prices {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    background: #FFFFFF;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-container {
+    /* Position */
+    
+    /* block-model */
+    max-width: 76.375em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-top: 39px;
+    margin-left: auto;
+    margin-bottom: 130px;
+    margin-right: auto;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-functional {
+    /* Position */
+    
+    /* block-model */
+    width: 20.75em;
+    height: 24.4375em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items:flex-start;
+    
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-title {
+    /* Position */
+    
+    /* block-model */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-button-wrapper {
+    /* Position */
+    
+    /* block-model */
+    width: 20.75em;
+    height: 17.625em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* Typography */
+    
+    /* Decoration */
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-accordion-button {
+    /* Position */
+    position: relative;
+    /* block-model */
+    width: 250px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-indent: 34px;
+    text-align: left;
+    color: #000000;
+    /* Decoration */
+    border: none;
+    background: #EDF2EC;
+    border-radius: 20px;
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+
+.prices-accordion-button:hover,
+.prices-accordion-button:active {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    color:#FFFFFF;
+    /* Decoration */
+    background: #E06733;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.prices-accordion-button-vector:after {
+    /* Position */
+    position: absolute;
+    top: 34%;
+    left: 77.6%;
+    /* block-model */
+    width: 16px;
+    height: 16px;
+    /* Typography */
+
+    /* Decoration */
+    content: "";
+    background-image: url(../assets/svg/4_prices/accordion_btn.svg);
+    background-repeat: no-repeat;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-content-container {
+    /* Position */
+    
+    /* block-model */
+    width: 28.25em;
+    height: 25.3125em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-content-wrapper {
+    /* Position */
+    
+    /* block-model */
+    width: 28.25em;
+    height: 11.9375em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-title-span {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #499A18;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-content-title {
+    /* Position */
+    
+    /* block-model */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices-button {
+    /* Position */
+
+    /* block-model */
+    width: 162px;
+    height: 50px;
+    display: block;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    text-decoration: none;
+    /* Decoration */
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+}
+
+.prices-button:hover,
+.prices-button:active {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    color:#FFFFFF;
+    /* Decoration */
+    background: #E06733;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.prices-button:visited {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    opacity: 0.35;
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+.prices-leaf-img {
+    /* Position */
+    
+    /* block-model */
+    width: 152px;
+    height: 174.99px;
+    display: block;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+/* Prices section end */
+
+
 
 .footer-rsschool-logo {
     /* Position */
