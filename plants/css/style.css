@@ -343,8 +343,6 @@ header {
     align-items: center;
     margin: 0 auto;
     
-    /* margin-top: 62px;
-
     /* Typography */
   
     /* Decoration */
@@ -395,7 +393,7 @@ header {
 
     /* block-model */
     width: 45%;
-    height: 340px;
+    min-height: 340px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -586,7 +584,7 @@ header {
     
     /* block-model */
     width: 50%;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -875,7 +873,7 @@ header {
     
     /* block-model */
     max-width: 77em;
-    height: 59.6em;
+    min-height: 59.6em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -899,7 +897,7 @@ header {
     
     /* block-model */
     width: 27%;
-    height: 450px;
+    min-height: 450px;
     display: flex;
     flex-direction:column;
     flex-wrap: nowrap;
@@ -1332,6 +1330,7 @@ header {
     color: #E06733;
     text-decoration: none;
     /* Decoration */
+    background: #FFFFFF;
     border: 1px solid #E06733;
     border-radius: 5px;
     /* Animation */
@@ -1390,6 +1389,9 @@ header {
 
 }
 /* Prices section end */
+/* Contacts section start */
+
+/* Contacts section end */
 
 
 
