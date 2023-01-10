@@ -1571,9 +1571,11 @@ header {
     /* block-model */
     
     /* Typography */
-    color:#FFFFFF;
+    
     /* Decoration */
-    background: #E06733;
+    background: #C1E698;
+    border: 1px solid #D6E7D2;
+    border-radius: 0px;
     cursor: pointer;
     /* Animation */
 
