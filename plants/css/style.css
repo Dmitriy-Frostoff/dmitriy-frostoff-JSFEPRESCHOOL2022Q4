@@ -519,6 +519,7 @@ header {
     color:#FFFFFF;
     /* Decoration */
     background: #E06733;
+    cursor: pointer;
     /* Animation */
 
     /* Various */
@@ -847,6 +848,7 @@ header {
     color:#FFFFFF;
     /* Decoration */
     background: #E06733;
+    cursor: pointer;
     /* Animation */
 
     /* Various */
@@ -1198,6 +1200,7 @@ header {
     color:#FFFFFF;
     /* Decoration */
     background: #E06733;
+    cursor: pointer;
     /* Animation */
 
     /* Various */
@@ -1351,6 +1354,7 @@ header {
     color:#FFFFFF;
     /* Decoration */
     background: #E06733;
+    cursor: pointer;
     /* Animation */
 
     /* Various */
@@ -1390,6 +1394,212 @@ header {
 }
 /* Prices section end */
 /* Contacts section start */
+
+.contacts {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    background: #EDF2EC;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts-container {
+    /* Position */
+    
+    /* block-model */
+    max-width: 76.375em;
+    min-height: 34.3125em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: flex-end;
+    margin-top: -16px;
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-right: auto;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts-content-container {
+    /* Position */
+    
+    /* block-model */
+    max-width: 44.25em;
+    min-height: 31.0619em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-bottom: 0px;
+    margin-right: 0;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts-content-img {
+    /* Position */
+    
+    /* block-model */
+    display: block;
+    width: 400px;
+    height: 496.99px;
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts-title {
+    /* Position */
+    
+    /* block-model */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 7px;
+    padding-left: 113px;
+    /* Typography */
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts-functional-wrapper {
+    /* Position */
+    
+    /* block-model */
+    max-width: 28.125em;
+    min-height: 34.375em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 148px;
+    /* Typography */
+
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts-functional-accordion {
+    /* Position */
+    position: relative;
+    /* block-model */
+    width: 450px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-indent: 14px;
+    text-align: left;
+    color: #717171;
+    /* Decoration */
+    border: none;
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+
+.contacts-functional-accordion:hover,
+.contacts-functional-accordion:active {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    color:#FFFFFF;
+    /* Decoration */
+    background: #E06733;
+    cursor: pointer;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.contacts-accordion-button-vector:after {
+    /* Position */
+    position: absolute;
+    top: 34%;
+    left: 88.67%;
+    /* block-model */
+    width: 16px;
+    height: 16px;
+    /* Typography */
+
+    /* Decoration */
+    content: "";
+    background-image: url(../assets/svg/5_contacts/accordion_btn.svg);
+    background-repeat: no-repeat;
+    /* Animation */
+    
+    /* Various */
+
+}
 
 /* Contacts section end */
 
