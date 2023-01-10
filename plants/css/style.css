@@ -1571,7 +1571,7 @@ header {
     /* block-model */
     
     /* Typography */
-    
+
     /* Decoration */
     background: #C1E698;
     border: 1px solid #D6E7D2;
@@ -1607,16 +1607,290 @@ header {
 
 
 
-.footer-rsschool-logo {
+.footer {
     /* Position */
     
     /* block-model */
-    width: 120px;
-    height: 35px;
+    
     /* Typography */
     
     /* Decoration */
+    background: #FFFFFF;
+    /* Animation */
     
+    /* Various */
+
+}
+
+.footer-container {
+    /* Position */
+    
+    /* block-model */
+    max-width: 76.375em;
+    min-height: 8.125em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-left: 0;
+    /* Typography */
+    
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.footer-list-copy {
+    /* Position */
+    
+    /* block-model */
+    max-width: 10.5625em;
+    min-height: 8.125em;
+    width: 13.83%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    
+    /* Decoration */
+    list-style: none;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.footer-list-copy-item {
+    /* Position */
+    
+    /* block-model */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /* line-height: 50px; */
+    color: #000000;
+    /* Decoration */
+    list-style: none;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.footer-list-copy-link {
+    /* Position */
+    
+    /* block-model */
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /* line-height: 50px; */
+    color: #000000;
+    text-decoration: none;
+    /* Decoration */
+    list-style: none;
+    /* Animation */
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+
+.footer-list-copy-link:hover,
+.footer-list-copy-link:active,
+.footer-bage-link:hover {
+    /* Position */
+    
+    /* block-model */
+
+    /* Typography */
+    
+    /* Decoration */
+    font-style: normal;
+    font-weight: 700;
+    color: #E06733;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.footer-list-copy-link:visited,
+.footer-bage-link:visited,
+.footer-social-link:visited {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+    
+}
+
+.footer-list-copy-link:visited:hover,
+.footer-bage-link:visited:hover,
+.footer-social-link:visited:hover {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    font-style: normal;
+    font-weight: 700;
+    color: #E06733;
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+    
+}
+
+.footer-bage {
+    /* Position */
+    
+    /* block-model */
+    width: 18.310%;
+    height: 100%;
+    /* Typography */
+    
+    /* line-height: 50px; */
+    
+    /* Decoration */
+    list-style: none;
+    /* Animation */
+    
+    /* Various */
+    
+}
+
+.footer-bage-link {
+    /* Position */
+    
+    /* block-model */
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /* line-height: 50px; */
+    text-decoration: none;
+    color: #000000;
+    /* Decoration */
+    list-style: none;
+    /* Animation */
+    
+    /* Various */
+    
+}
+
+.footer-social-list {
+    /* Position */
+    
+    /* block-model */
+    max-width: 11.75em;
+    min-height: 100%;
+    width: 15.3846%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    /* Typography */
+    
+    /* Decoration */
+    list-style: none;
+    /* Animation */
+    
+    /* Various */
+    
+}
+
+.footer-social-item {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+    
+}
+
+.footer-social-link {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+    
+}
+
+.footer-social-link:hover,
+.footer-social-link:active {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    /* opacity: 0.5; */
+    filter: drop-shadow(0px 0px 5px #E06733);
     /* Animation */
     
     /* Various */
