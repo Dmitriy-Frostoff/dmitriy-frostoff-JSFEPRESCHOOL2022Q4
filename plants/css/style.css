@@ -1626,8 +1626,7 @@ header {
     /* Position */
     
     /* block-model */
-    max-width: 76.375em;
-    min-height: 8.125em;
+    max-width: 1222px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1637,7 +1636,7 @@ header {
     margin-right: auto;
     margin-bottom: 0;
     margin-left: auto;
-    padding-left: 0;
+    padding: 35px 0px;
     /* Typography */
     
     /* Decoration */
@@ -1652,9 +1651,7 @@ header {
     /* Position */
     
     /* block-model */
-    max-width: 10.5625em;
-    min-height: 8.125em;
-    width: 13.83%;
+    width: 169px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1664,8 +1661,9 @@ header {
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
-    /* Typography */
     
+    /* Typography */
+    line-height: 50px;
     /* Decoration */
     list-style: none;
     /* Animation */
@@ -1733,13 +1731,13 @@ header {
     /* block-model */
 
     /* Typography */
-    
+
     /* Decoration */
     font-style: normal;
     font-weight: 700;
     color: #E06733;
     /* Animation */
-    
+    letter-spacing: -0.4px;
     /* Various */
 
 }
@@ -1756,7 +1754,7 @@ header {
     font-weight: 400;
     color: #000000;
     /* Decoration */
-
+    
     /* Animation */
     
     /* Various */
@@ -1775,7 +1773,7 @@ header {
     font-weight: 700;
     color: #E06733;
     /* Decoration */
-
+    
     /* Animation */
     
     /* Various */
@@ -1786,12 +1784,9 @@ header {
     /* Position */
     
     /* block-model */
-    width: 18.310%;
-    height: 100%;
+    width: 226px;
     /* Typography */
-    
-    /* line-height: 50px; */
-    
+    line-height: 50px;
     /* Decoration */
     list-style: none;
     /* Animation */
@@ -1830,18 +1825,16 @@ header {
     /* Position */
     
     /* block-model */
-    max-width: 11.75em;
-    min-height: 100%;
-    width: 15.3846%;
-    height: 100%;
+    width: 188px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: space-between;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0px;
     /* Typography */
-    
+    line-height: 50px;
     /* Decoration */
     list-style: none;
     /* Animation */
@@ -1854,7 +1847,11 @@ header {
     /* Position */
     
     /* block-model */
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
     /* Typography */
     
     /* Decoration */
@@ -1889,10 +1886,60 @@ header {
     /* Typography */
     
     /* Decoration */
-    /* opacity: 0.5; */
-    filter: drop-shadow(0px 0px 5px #E06733);
     /* Animation */
     
     /* Various */
 
+}
+
+.footer-social-icons {
+    /* Position */
+    
+    /* block-model */
+    display: block;
+    /* Typography */
+    
+    /* Decoration */
+    fill:#000000;
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+    
+}
+
+.footer-social-icons:hover, 
+.footer-social-icons:active {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    fill:#E06733;
+    /* Animation */
+    
+    /* Various */
+    
+}
+
+.footer-social-icons:hover, 
+.footer-social-icons:active,
+.footer-social-icons:visited:hover,
+.footer-social-icons:visited:active {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    fill:#E06733;
+    /* Animation */
+    
+    /* Various */
+    
 }
