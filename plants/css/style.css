@@ -734,17 +734,15 @@ header {
 
 }
 
-.service-container {
+.service__container {
     /* Position */
     
     /* block-model */
-    max-width: 76.375em;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 auto;
     /* Typography */
     
     /* Decoration */
@@ -755,7 +753,7 @@ header {
 
 }
 
-.service-options {
+.service__options {
     /* Position */
     
     /* block-model */
@@ -779,7 +777,7 @@ header {
 
 }
 
-.service-title {
+.service__title {
     /* Position */
     
     /* block-model */
@@ -801,7 +799,7 @@ header {
 
 }
 
-.service-button-wrapper {
+.service__button-wrapper {
     /* Position */
     
     /* block-model */
@@ -823,7 +821,7 @@ header {
 
 }
 
-.service-button {
+.service__button {
     /* Position */
 
     /* block-model */
@@ -852,8 +850,8 @@ header {
     /* Various */
 }
 
-.service-button:hover,
-.service-button:active {
+.service__button:hover,
+.service__button:active {
     /* Position */
 
     /* block-model */
@@ -869,7 +867,7 @@ header {
 
 }
 
-.service-button:visited {
+.service__button:visited {
     /* Position */
 
     /* block-model */
@@ -884,7 +882,7 @@ header {
 
 }
 
-.service-content-container {
+.service__content-container {
     /* Position */
     
     /* block-model */
@@ -908,7 +906,7 @@ header {
 
 }
 
-.service-item {
+.service__item {
     /* Position */
     
     /* block-model */
@@ -931,7 +929,7 @@ header {
 
 }
 
-.service-link-wrapper {
+.service__link-wrapper {
     /* Position */
     
     /* block-model */
@@ -946,7 +944,7 @@ header {
 
 }
 
-.service-link {
+.service__link {
     /* Position */
     
     /* block-model */
@@ -964,8 +962,8 @@ header {
 
 }
 
-.service-link:hover,
-.service-link:active {
+.service__link:hover,
+.service__link:active {
     /* Position */
     
     /* block-model */
@@ -981,7 +979,7 @@ header {
 }
 
 
-.service-img {
+.service__img {
     /* Position */
     
     /* block-model */
@@ -999,7 +997,7 @@ header {
 
 }
 
-.service-definition-wrapper {
+.service__definition-wrapper {
     /* Position */
     
     /* block-model */
@@ -1021,7 +1019,7 @@ header {
 
 }
 
-.service-subtitle {
+.service__subtitle {
     /* Position */
     
     /* block-model */
@@ -1042,7 +1040,7 @@ header {
 }
 
 
-.service-definition {
+.service__definition {
     /* Position */
     
     /* block-model */
