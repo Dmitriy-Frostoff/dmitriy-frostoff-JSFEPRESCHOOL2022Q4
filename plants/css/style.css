@@ -575,17 +575,15 @@ header {
 
 }
 
-.about-container {
+.about__container {
     /* Position */
     
     /* block-model */
-    max-width: 76.375em;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     /* Typography */
     
     /* Decoration */
@@ -596,7 +594,7 @@ header {
 
 }
 
-.about-content-wrapper {
+.about__content-wrapper {
     /* Position */
     
     /* block-model */
@@ -622,7 +620,7 @@ header {
 
 }
 
-.about-title {
+.about__title {
     /* Position */
     
     /* block-model */
@@ -643,7 +641,7 @@ header {
 
 }
 
-.about-title-span {
+.about__title-span {
     /* Position */
     
     /* block-model */
@@ -663,7 +661,7 @@ header {
 
 }
 
-.about-content {
+.about__content {
     /* Position */
     
     /* block-model */
@@ -684,7 +682,7 @@ header {
 
 }
 
-.about-houseplant-wrapper {
+.about__houseplant-wrapper {
     /* Position */
     
     /* block-model */
@@ -701,7 +699,7 @@ header {
 
 }
 
-.about-houseplant-img {
+.about__houseplant-img {
     /* Position */
     
     /* block-model */
