@@ -347,7 +347,7 @@ header {
 
 }
 
-.welcome-container {
+.welcome__container {
     /* Position */
 
     /* block-model */
@@ -367,7 +367,7 @@ header {
 
 }
 
-.welcome-leaf-wrapper {
+.welcome__leaf-wrapper {
     /* Position */
 
     /* block-model */
@@ -382,7 +382,7 @@ header {
     /* Various */
 
 }
-.welcome-leaf-img {
+.welcome__leaf-img {
     /* Position */
 
     /* block-model */
@@ -404,7 +404,7 @@ header {
 
 }
 
-.welcome-content-wrapper {
+.welcome__content__wrapper {
     /* Position */
 
     /* block-model */
@@ -431,7 +431,7 @@ header {
 
 }
 
-.welcome-title {
+.welcome__title {
     /* Position */
 
     /* block-model */
@@ -454,7 +454,7 @@ header {
 
 }
 
-.welcome-title-span {
+.welcome__title-span {
     /* Position */
 
     /* block-model */
@@ -471,7 +471,7 @@ header {
 
 
 
-.welcome-content {
+.welcome__content {
     /* Position */
 
     /* block-model */
@@ -495,7 +495,7 @@ header {
 
 }
 
-.welcome-button {
+.welcome__button {
     /* Position */
 
     /* block-model */
@@ -525,8 +525,8 @@ header {
     /* Various */
 }
 
-.welcome-button:hover,
-.welcome-button:active {
+.welcome__button:hover,
+.welcome__button:active {
     /* Position */
 
     /* block-model */
@@ -542,7 +542,7 @@ header {
 
 }
 
-.welcome-button:visited {
+.welcome__button:visited {
     /* Position */
 
     /* block-model */
