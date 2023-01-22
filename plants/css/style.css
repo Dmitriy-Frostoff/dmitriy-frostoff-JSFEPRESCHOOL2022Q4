@@ -129,7 +129,6 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
-    margin: 0 auto;
     
     /* Typography */
   
@@ -1067,7 +1066,7 @@ header {
     /* Position */
     
     /* block-model */
-    
+    padding: 39px 0px 115px 0px;
     /* Typography */
     
     /* Decoration */
@@ -1087,10 +1086,7 @@ header {
     flex-wrap: nowrap;
     justify-content:space-between;
     align-items: flex-start;
-    margin-top: 39px;
-    margin-left: auto;
-    margin-bottom: 130px;
-    margin-right: auto;
+    
     /* Typography */
     
     /* Decoration */
@@ -1411,7 +1407,7 @@ header {
     /* Position */
     
     /* block-model */
-    
+    padding: 0;
     /* Typography */
     
     /* Decoration */
@@ -1426,16 +1422,11 @@ header {
     /* Position */
     
     /* block-model */
-    min-height: 34.3125em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
     align-items: flex-end;
-    margin-top: -16px;
-    margin-left: auto;
-    margin-bottom: 0px;
-    margin-right: auto;
     /* Typography */
     
     /* Decoration */
@@ -1622,7 +1613,8 @@ header {
     /* Position */
     
     /* block-model */
-    
+    padding: 35px 0px;
+
     /* Typography */
     
     /* Decoration */
@@ -1642,11 +1634,6 @@ header {
     flex-wrap: nowrap;
     justify-content:space-between;
     align-items: center;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
-    padding: 35px 0px;
     /* Typography */
     
     /* Decoration */
