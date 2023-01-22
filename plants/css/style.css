@@ -1404,6 +1404,7 @@ header {
 
 }
 /* Prices section end */
+
 /* Contacts section start */
 
 .contacts {
@@ -1421,11 +1422,10 @@ header {
 
 }
 
-.contacts-container {
+.contacts__container {
     /* Position */
     
     /* block-model */
-    max-width: 76.375em;
     min-height: 34.3125em;
     display: flex;
     flex-direction: row;
@@ -1446,7 +1446,7 @@ header {
 
 }
 
-.contacts-content-container {
+.contacts__content-container {
     /* Position */
     
     /* block-model */
@@ -1471,7 +1471,7 @@ header {
 
 }
 
-.contacts-content-img {
+.contacts__content-img {
     /* Position */
     
     /* block-model */
@@ -1488,7 +1488,7 @@ header {
 
 }
 
-.contacts-title {
+.contacts__title {
     /* Position */
     
     /* block-model */
@@ -1513,7 +1513,7 @@ header {
 
 }
 
-.contacts-functional-wrapper {
+.contacts__functional-wrapper {
     /* Position */
     
     /* block-model */
@@ -1540,7 +1540,7 @@ header {
 
 }
 
-.contacts-functional-accordion {
+.contacts__functional-accordion {
     /* Position */
     position: relative;
     /* block-model */
@@ -1594,7 +1594,7 @@ header {
 
 }
 
-.contacts-accordion-button-vector:after {
+.contacts__accordion-button_vector:after {
     /* Position */
     position: absolute;
     top: 34%;
