@@ -67,7 +67,7 @@ body {
 
 }
 
-.main-container {
+.main__container {
     /* Position */
 
     /* block-model */
@@ -197,7 +197,7 @@ header {
 
 }
 
-.nav-logo-item {
+.nav__logo-item {
     /* Position */
 
     /* block-model */
@@ -1575,8 +1575,8 @@ header {
 
 }
 
-.contacts-functional-accordion:hover,
-.contacts-functional-accordion:active {
+.contacts__functional-accordion:hover,
+.contacts__functional-accordion:active {
     /* Position */
 
     /* block-model */
