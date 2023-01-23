@@ -2770,6 +2770,44 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .contacts {
+        /* Position */
+        
+        /* block-model */
+        padding: 0;
+        margin-top: 79px;
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .contacts {
+        /* Position */
+        
+        /* block-model */
+        padding: 25px 0 0;
+        margin: 0;
+
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+
 .contacts__container {
     /* Position */
     
@@ -2778,7 +2816,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+    flex-grow: 1;
+
     /* Typography */
     
     /* Decoration */
@@ -2787,20 +2827,57 @@ body {
     
     /* Various */
 
+}
+
+@media (max-width: 768px) {
+    .contacts__container {
+        /* Position */
+        
+        /* block-model */
+        padding: 40px 0 0;
+
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .contacts__container {
+        /* Position */
+        
+        /* block-model */
+        padding: 0;
+
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
 }
 
 .contacts__content-container {
     /* Position */
     
     /* block-model */
-    flex-basis: 57.559%;
-    min-height: 495px;
+    flex-basis: 36.559%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
     align-items: flex-start;
     margin: 0px;
+    flex-grow: 1;
+
     /* Typography */
     
     /* Decoration */
@@ -2810,6 +2887,26 @@ body {
     /* Various */
 
 }
+
+@media (max-width: 768px) {
+    .contacts__content-container {
+        /* Position */
+        
+        /* block-model */
+        flex-basis: 100%;
+        justify-content: center;
+    
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 
 .contacts__content-img {
     /* Position */
@@ -2828,12 +2925,54 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .contacts__content-img {
+        /* Position */
+        
+        /* block-model */
+        width: 200px;
+        height: 249px;
+        margin: 250px 0 0 20px;
+        
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .contacts__content-img {
+        /* Position */
+        
+        /* block-model */
+        width: 100px;
+        height: 124px;
+        margin: 133px 4px 0 0;
+        
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 .contacts__title {
     /* Position */
     
     /* block-model */
+    flex-basis: 16%;
     margin: 0;
-    padding: 7px 0px 0 0;
+    padding: 7px 0 0 0;
+    flex-grow: 1;
 
     /* Typography */
     font-family: 'Inika';
@@ -2850,12 +2989,51 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .contacts__title {
+        /* Position */
+        
+        /* block-model */
+        flex-basis: 100%;
+        padding: 0;
+
+        /* Typography */
+        text-align: center;
+
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .contacts__title {
+        /* Position */
+        
+        /* block-model */
+
+        /* Typography */
+        font-size: 25px;
+        line-height: 33px;
+
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+
 .contacts__functional-wrapper {
     /* Position */
     
     /* block-model */
-    flex-basis: 18.825%;
-    min-height: 402px;
+    flex-basis: 10.825%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -2863,7 +3041,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     margin: 0;
-    
+    padding: 95px 0 0;
+
     /* Typography */
 
     /* Decoration */
@@ -2872,6 +3051,42 @@ body {
     
     /* Various */
 
+}
+
+@media (max-width: 768px) {
+    .contacts__functional-wrapper {
+        /* Position */
+        
+        /* block-model */
+        flex-basis: 100%;
+        
+        /* Typography */
+    
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .contacts__functional-wrapper {
+        /* Position */
+        
+        /* block-model */
+        padding: 80px 0 0 0;
+        
+        /* Typography */
+    
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
 }
 
 .contacts__functional-accordion {
@@ -2908,6 +3123,25 @@ body {
     /* Various */
 
 }
+
+@media (max-width: 380px) {
+    .contacts__functional-accordion {
+        /* Position */
+
+        /* block-model */
+        width: 300px;
+        height: 50px;
+        /* Typography */
+
+        /* Decoration */
+
+        /* Animation */
+
+        /* Various */
+    
+    }
+}
+
 
 .contacts__functional-accordion:hover,
 .contacts__functional-accordion:active {
@@ -2947,6 +3181,25 @@ body {
     /* Various */
 
 }
+
+@media (max-width: 380px) {
+    .contacts__accordion-button_vector:after {
+        /* Position */
+        left: 87%;
+
+        /* block-model */
+        
+        /* Typography */
+    
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 
 /* Contacts section end */
 
