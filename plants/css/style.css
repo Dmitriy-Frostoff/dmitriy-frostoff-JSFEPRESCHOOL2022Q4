@@ -2712,44 +2712,6 @@ body {
 
 }
 
-@media (max-width: 380px) {
-    .prices__leaf-img {
-        /* Position */
-        
-        /* block-model */
-        display: none;
-
-        /* Typography */
-        
-        /* Decoration */
-        
-        /* Animation */
-        
-        /* Various */
-    
-    }
-}
-
-
-/* Prices section end */
-
-/* Contacts section start */
-
-.contacts {
-    /* Position */
-    
-    /* block-model */
-    padding: 0;
-    /* Typography */
-    
-    /* Decoration */
-    background: #EDF2EC;
-    /* Animation */
-    
-    /* Various */
-
-}
-
 @media (max-width: 768px) {
     .prices__leaf-img {
         /* Position */
@@ -2769,20 +2731,43 @@ body {
     
     /* Contacts section start */
     
-    .contacts {
+}
+
+@media (max-width: 380px) {
+    .prices__leaf-img {
         /* Position */
         
         /* block-model */
-        padding: 0;
+        display: none;
+
         /* Typography */
         
         /* Decoration */
-        background: #EDF2EC;
+        
         /* Animation */
         
         /* Various */
     
     }
+}
+
+/* Prices section end */
+
+/* Contacts section start */
+
+.contacts {
+    /* Position */
+    
+    /* block-model */
+    padding: 52px 0 0;
+    /* Typography */
+    
+    /* Decoration */
+    background: #EDF2EC;
+    /* Animation */
+    
+    /* Various */
+
 }
 
 .contacts__container {
@@ -2808,17 +2793,14 @@ body {
     /* Position */
     
     /* block-model */
-    max-width: 44.25em;
-    min-height: 31.0619em;
+    flex-basis: 57.559%;
+    min-height: 495px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
     align-items: flex-start;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
+    margin: 0px;
     /* Typography */
     
     /* Decoration */
@@ -2850,12 +2832,9 @@ body {
     /* Position */
     
     /* block-model */
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding-top: 7px;
-    padding-left: 113px;
+    margin: 0;
+    padding: 7px 0px 0 0;
+
     /* Typography */
     font-family: 'Inika';
     font-style: normal;
@@ -2875,19 +2854,16 @@ body {
     /* Position */
     
     /* block-model */
-    max-width: 28.125em;
-    min-height: 34.375em;
+    flex-basis: 18.825%;
+    min-height: 402px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 0px;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding-top: 148px;
+    margin: 0;
+    
     /* Typography */
 
     /* Decoration */
