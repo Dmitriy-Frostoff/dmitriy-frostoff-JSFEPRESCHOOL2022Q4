@@ -1082,7 +1082,7 @@ body {
     /* Position */
     
     /* block-model */
-    
+    padding: 93px 0;
     /* Typography */
     
     /* Decoration */
@@ -1099,9 +1099,9 @@ body {
     /* block-model */
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     /* Typography */
     
     /* Decoration */
@@ -1116,18 +1116,9 @@ body {
     /* Position */
     
     /* block-model */
-    width: 50%;
-    min-height: 350px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 10px;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    flex-basis: 62%;
+    flex-grow: 1;
+    padding: 64.5px 0;
     /* Typography */
     
     /* Decoration */
@@ -1143,7 +1134,7 @@ body {
     
     /* block-model */
     width: 70%;
-    margin: 0;
+    margin: 0 0 42px 0;
     /* Typography */
     font-family: 'Inika';
     font-style: normal;
@@ -1183,6 +1174,7 @@ body {
     /* Position */
     
     /* block-model */
+    max-width: 82%;
     margin: 0;
     /* Typography */
     font-family: 'Inter';
@@ -1204,9 +1196,8 @@ body {
     /* Position */
     
     /* block-model */
-    width: 38%;
-    margin-top: 95px;
-    margin-bottom: 90px;
+    flex-basis: 38%;
+    flex-grow: 1;
     /* Typography */
     
     /* Decoration */
