@@ -2899,7 +2899,7 @@ body {
         /* Typography */
         
         /* Decoration */
-        
+        order: -1;
         /* Animation */
         
         /* Various */
@@ -3001,7 +3001,7 @@ body {
         text-align: center;
 
         /* Decoration */
-        
+        order: -3;
         /* Animation */
         
         /* Various */
@@ -3063,7 +3063,7 @@ body {
         /* Typography */
     
         /* Decoration */
-        
+        order: -2;
         /* Animation */
         
         /* Various */
