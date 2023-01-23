@@ -2058,6 +2058,42 @@ body {
     /* Animation */
     
     /* Various */
+    
+}
+
+@media (max-width: 768px) {
+    .prices {
+        /* Position */
+        
+        /* block-model */
+        padding: 38px 0 60px 0;
+        /* Typography */
+        
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+        
+    }
+
+}
+
+@media (max-width: 380px) {
+    .prices {
+        /* Position */
+        
+        /* block-model */
+        padding: 25px 0 40px 0;
+        /* Typography */
+        
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+        
+    }
 
 }
 
@@ -2067,9 +2103,10 @@ body {
     /* block-model */
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content:space-between;
     align-items: flex-start;
+    gap: 20px;
     
     /* Typography */
     
@@ -2085,8 +2122,8 @@ body {
     /* Position */
     
     /* block-model */
-    width: 20.75em;
-    height: 24.4375em;
+    width: 332px;
+    height: 391px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2103,14 +2140,49 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .prices__functional {
+        /* Position */
+        
+        /* block-model */
+        flex-basis: 49%;
+        
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .prices__functional {
+        /* Position */
+        
+        /* block-model */
+        height: auto;
+        align-items: center;
+
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 .prices__title {
     /* Position */
     
     /* block-model */
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin: 0;
+
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -2126,12 +2198,54 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .prices__title {
+        /* Position */
+        
+        /* block-model */
+        margin: 0 0 0 15px;
+    
+        /* Typography */
+        font-size: 35px;
+        line-height: 42px;
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+
+}
+
+@media (max-width: 380px) {
+    .prices__title {
+        /* Position */
+        
+        /* block-model */
+        margin: 0;
+    
+        /* Typography */
+        font-size: 25px;
+        line-height: 30px;
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+
+}
+
+
+
 .prices__button-wrapper {
     /* Position */
     
     /* block-model */
-    width: 20.75em;
-    height: 17.625em;
+    width: 330px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2146,6 +2260,49 @@ body {
     
     /* Various */
 
+}
+
+@media (max-width: 768px) {
+    .prices__button-wrapper {
+        /* Position */
+        
+        /* block-model */
+        flex-basis: 72%;
+        width: 330px;
+        justify-content: space-between;
+        margin: 0 0 11px;
+        padding: 35px 0 30px;
+
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .prices__button-wrapper {
+        /* Position */
+        
+        /* block-model */
+        margin: 0 0 11px;
+        padding: 35px 0 30px;
+        gap: 14px;
+        margin: 0 0 0px 0;
+        padding: 66px 0 25px;
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
 }
 
 .prices__accordion-button {
@@ -2179,6 +2336,28 @@ body {
     transition-delay: 0s;
     /* Various */
 
+}
+
+@media (max-width: 380px) {
+    .prices__accordion-button {
+        /* Position */
+
+        /* block-model */
+        width: 180px;
+        height: 50px;
+
+        /* Typography */
+        font-size: 15px;
+        line-height: 20px;
+        text-indent: 25px;
+        
+        /* Decoration */
+
+        /* Animation */
+
+        /* Various */
+    
+    }
 }
 
 .prices__accordion-button:hover,
@@ -2218,12 +2397,29 @@ body {
 
 }
 
+@media (max-width: 380px) {
+    .prices__accordion-button_vector:after {
+        /* Position */
+        left: 70%;
+        /* block-model */
+
+        /* Typography */
+    
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 .prices__content-container {
     /* Position */
     
     /* block-model */
-    width: 28.25em;
-    height: 25.3125em;
+    width: 452px;
+    height: 405px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2239,12 +2435,52 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .prices__content-container {
+        /* Position */
+        
+        /* block-model */
+        flex-basis: 43%;
+        padding: 101px 0 33px;
+        
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .prices__content-container {
+        /* Position */
+        
+        /* block-model */
+        height: auto;
+        align-items: center;
+        flex-grow: 1;
+        padding: 0;
+        
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 .prices__content-wrapper {
     /* Position */
     
     /* block-model */
-    width: 28.25em;
-    height: 11.9375em;
+    width: 452px;
+    height: 191px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -2258,6 +2494,43 @@ body {
     
     /* Various */
 
+}
+
+@media (max-width: 768px) {
+    .prices__content-wrapper {
+        /* Position */
+        
+        /* block-model */
+        flex-basis: 19%;
+        width: auto;
+        
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .prices__content-wrapper {
+        /* Position */
+        
+        /* block-model */
+        align-items: center;
+        
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
 }
 
 .prices__title-span {
@@ -2298,6 +2571,46 @@ body {
 
 }
 
+@media (max-width: 768px) {
+    .prices__content-title {
+        /* Position */
+        
+        /* block-model */
+        margin: 0 0 29px 0;
+        
+        /* Typography */
+        font-size: 25px;
+        line-height: 35px;
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
+    .prices__content-title {
+        /* Position */
+        
+        /* block-model */
+        width: 70%;
+        margin: 0 0 22px 0;
+        
+        /* Typography */
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 .prices__button {
     /* Position */
 
@@ -2305,10 +2618,8 @@ body {
     width: 162px;
     height: 50px;
     display: block;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin: 0;
+
     /* Typography */
     font-family: 'Inika';
     font-style: normal;
@@ -2317,16 +2628,39 @@ body {
     line-height: 26px;
     color: #E06733;
     text-decoration: none;
+
     /* Decoration */
     background: #FFFFFF;
     border: 1px solid #E06733;
     border-radius: 5px;
+
     /* Animation */
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
+
     /* Various */
+}
+
+@media (max-width: 380px) {
+    .prices__button {
+        /* Position */
+    
+        /* block-model */
+        width: 121px;
+        height: 35px;
+
+        /* Typography */
+        font-size: 15px;
+        line-height: 20px;
+        
+        /* Decoration */
+
+        /* Animation */
+
+        /* Various */
+    }
 }
 
 .prices__button:hover,
@@ -2377,6 +2711,26 @@ body {
     /* Various */
 
 }
+
+@media (max-width: 380px) {
+    .prices__leaf-img {
+        /* Position */
+        
+        /* block-model */
+        display: none;
+
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+
 /* Prices section end */
 
 /* Contacts section start */
@@ -2394,6 +2748,41 @@ body {
     
     /* Various */
 
+}
+
+@media (max-width: 768px) {
+    .prices__leaf-img {
+        /* Position */
+        
+        /* block-model */
+        margin: 30px 0 0;
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+    /* Prices section end */
+    
+    /* Contacts section start */
+    
+    .contacts {
+        /* Position */
+        
+        /* block-model */
+        padding: 0;
+        /* Typography */
+        
+        /* Decoration */
+        background: #EDF2EC;
+        /* Animation */
+        
+        /* Various */
+    
+    }
 }
 
 .contacts__container {
