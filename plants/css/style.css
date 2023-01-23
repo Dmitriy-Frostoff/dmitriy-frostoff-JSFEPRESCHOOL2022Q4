@@ -719,7 +719,7 @@ body {
     /* Position */
 
     /* block-model */
-    flex-basis: 36.661%;
+    flex-basis: 55%;
     flex-grow: 1;
     /* Typography */
   
@@ -808,6 +808,7 @@ body {
 
     /* block-model */
     flex-basis: 45%;
+    flex-grow: 1;
     /* Typography */
   
     /* Decoration */
