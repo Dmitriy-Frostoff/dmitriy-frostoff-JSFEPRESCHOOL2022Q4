@@ -1455,7 +1455,7 @@ body {
     /* Position */
     
     /* block-model */
-    
+    padding: 40px 0 68px 0;
     /* Typography */
     
     /* Decoration */
@@ -1472,7 +1472,7 @@ body {
     /* block-model */
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     /* Typography */
@@ -1489,16 +1489,14 @@ body {
     /* Position */
     
     /* block-model */
-    max-width: 62.9375em;
+    max-width: 1007px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items:center;
-    margin-top: 40px;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    row-gap: 40px;
+    column-gap: 117px;
     /* Typography */
     
     /* Decoration */
@@ -1513,7 +1511,7 @@ body {
     /* Position */
     
     /* block-model */
-    width: 7.65em;
+    flex-basis: 29%;
     margin: 0;
     /* Typography */
     font-family: 'Inika';
@@ -1535,13 +1533,12 @@ body {
     /* Position */
     
     /* block-model */
-    width: 35.5em;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-left: 142px;
+    gap: 10px 38px;
     
     /* Typography */
     
@@ -1618,16 +1615,15 @@ body {
     /* Position */
     
     /* block-model */
-    max-width: 77em;
-    min-height: 59.6em;
+    max-width: 1222px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 77px;
-    margin-bottom: 124px;
+    gap: 53px 116px;
+    padding: 77px 0 54px 0;
     /* Typography */
     
     /* Decoration */
@@ -1642,7 +1638,7 @@ body {
     /* Position */
     
     /* block-model */
-    width: 27%;
+    flex-basis: 27%;
     min-height: 450px;
     display: flex;
     flex-direction:column;
@@ -1739,7 +1735,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     /* Typography */
     
     /* Decoration */
@@ -1755,7 +1751,7 @@ body {
     /* Position */
     
     /* block-model */
-    margin-top: -6px;
+    margin: 6px 0 0 0;
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
@@ -1776,7 +1772,7 @@ body {
     /* Position */
     
     /* block-model */
-    margin-top: -25px;
+    
     /* Typography */
     font-family: 'Inter';
     font-style: normal;
