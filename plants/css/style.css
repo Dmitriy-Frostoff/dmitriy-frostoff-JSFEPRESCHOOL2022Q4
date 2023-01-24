@@ -2118,6 +2118,24 @@ body {
 
 }
 
+@media (max-width: 380px) {
+    .prices__container {
+        /* Position */
+        
+        /* block-model */
+        justify-content: center;
+        
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 .prices__functional {
     /* Position */
     
@@ -2163,6 +2181,7 @@ body {
         /* Position */
         
         /* block-model */
+        justify-content: center;
         height: auto;
         align-items: center;
 
@@ -2289,6 +2308,8 @@ body {
         /* Position */
         
         /* block-model */
+        width: 224px;
+        height: 235px;
         margin: 0 0 11px;
         padding: 35px 0 30px;
         gap: 14px;
