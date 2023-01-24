@@ -1333,7 +1333,7 @@ body {
         /* Typography */
         font-size: 15px;
         line-height: 25px;
-        white-space: normal;
+        
         /* Decoration */
         
         /* Animation */
@@ -1570,7 +1570,7 @@ body {
         /* Position */
         
         /* block-model */
-        flex-basis: 38%;
+        flex-basis: 40%;
 
         /* Typography */
         font-size: 35px;
