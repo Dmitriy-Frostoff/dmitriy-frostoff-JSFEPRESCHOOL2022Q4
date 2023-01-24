@@ -156,58 +156,8 @@ body {
         /* Position */
     
         /* block-model */
-        max-width: 364px;
-        /* Typography */
-    
-        /* Decoration */
-    
-        /* Animation */
-    
-        /* Various */
-    
-    }
-}
-
-@media (max-width: 364px) and (min-width: 381px) {
-    .container {
-        /* Position */
-    
-        /* block-model */
         padding: 0px 25px;
-        /* Typography */
-    
-        /* Decoration */
-    
-        /* Animation */
-    
-        /* Various */
-    
-    }
-}
 
-@media (max-width: 380px) {
-    .container {
-        /* Position */
-    
-        /* block-model */
-        max-width: 330px;
-        /* Typography */
-    
-        /* Decoration */
-    
-        /* Animation */
-    
-        /* Various */
-    
-    }
-}
-
-@media (max-width: 329px) {
-    .container {
-        /* Position */
-    
-        /* block-model */
-        padding: 0px 25px;
         /* Typography */
     
         /* Decoration */
@@ -1522,7 +1472,7 @@ body {
         /* Position */
         
         /* block-model */
-        padding: 30px 25px 27px 22px;
+        padding: 30px 0 27px;
         /* Typography */
         
         /* Decoration */
@@ -2007,7 +1957,7 @@ body {
         /* Position */
         
         /* block-model */
-        margin: 0;
+        margin: 8px 0 0px;
         /* Typography */
         
         /* Decoration */
@@ -2064,7 +2014,7 @@ body {
         
         /* block-model */
         max-width: 73%;
-        margin: 10px 0 0 0;
+        margin: 11px 0 0 0;
 
         /* Typography */
         text-align: center;
