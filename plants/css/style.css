@@ -134,7 +134,7 @@ body {
     }
 }
 
-@media (max-width: 668px) and (min-width: 381px) {
+@media (max-width: 668px) and (min-width: 415px) {
     .container {
         /* Position */
     
@@ -152,6 +152,40 @@ body {
 }
 
 @media (max-width: 414px) {
+    .container {
+        /* Position */
+    
+        /* block-model */
+        max-width: 364px;
+        /* Typography */
+    
+        /* Decoration */
+    
+        /* Animation */
+    
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 364px) and (min-width: 381px) {
+    .container {
+        /* Position */
+    
+        /* block-model */
+        padding: 0px 25px;
+        /* Typography */
+    
+        /* Decoration */
+    
+        /* Animation */
+    
+        /* Various */
+    
+    }
+}
+
+@media (max-width: 380px) {
     .container {
         /* Position */
     
