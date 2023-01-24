@@ -2102,7 +2102,7 @@ body {
         /* Position */
         
         /* block-model */
-        padding: 22px 0 40px 0;
+        padding: 25px 0 40px 0;
         /* Typography */
         
         /* Decoration */
@@ -3489,6 +3489,7 @@ body {
     
     /* block-model */
     width: 226px;
+    margin: 0 0px 0 4px;
     
     /* Typography */
     line-height: 50px;
@@ -3594,7 +3595,8 @@ body {
         /* Position */
         
         /* block-model */
-        padding: 0px 2px 0 0;
+        padding: 0px 0px 0 0;
+        margin: 12px 0 0;
         /* Typography */
 
         /* Decoration */
@@ -3623,6 +3625,23 @@ body {
     
     /* Various */
     
+}
+
+@media (max-width: 414px) {
+    .footer__social-item {
+        /* Position */
+        
+        /* block-model */
+        margin: 0 0 0 3px;
+        /* Typography */
+        
+        /* Decoration */
+        
+        /* Animation */
+        
+        /* Various */
+        
+    }
 }
 
 .footer__social-link {
