@@ -1488,7 +1488,7 @@ body {
         /* Position */
         
         /* block-model */
-        padding: 30px 25px 29px 22px;
+        padding: 30px 25px 27px 22px;
         /* Typography */
         
         /* Decoration */
@@ -1769,7 +1769,7 @@ body {
         /* block-model */
         max-width: 330px;
         justify-content: center;
-        gap: 33px 0;
+        gap: 34px 0;
         padding: 40px 0 0;
         /* Typography */
         
@@ -2102,7 +2102,7 @@ body {
         /* Position */
         
         /* block-model */
-        padding: 25px 0 40px 0;
+        padding: 22px 0 40px 0;
         /* Typography */
         
         /* Decoration */
@@ -2260,7 +2260,7 @@ body {
         /* Position */
         
         /* block-model */
-        margin: 0 0 40px;
+        margin: 0 0 38px;
     
         /* Typography */
         font-size: 25px;
