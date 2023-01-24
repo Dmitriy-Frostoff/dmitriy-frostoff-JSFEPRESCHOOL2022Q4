@@ -151,7 +151,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .container {
         /* Position */
     
@@ -222,7 +222,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .header {
         /* Position */
     
@@ -656,7 +656,7 @@ body {
     
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .welcome {
         /* Position */
     
@@ -748,7 +748,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .welcome__leaf-wrapper {
         /* Position */
     
@@ -838,7 +838,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .welcome__content-wrapper {
         /* Position */
     
@@ -896,7 +896,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .welcome__title {
         /* Position */
     
@@ -976,7 +976,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .welcome__content {
         /* Position */
     
@@ -1025,7 +1025,7 @@ body {
     /* Various */
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .welcome__button {
         /* Position */
     
@@ -1111,7 +1111,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .about {
         /* Position */
         
@@ -1246,7 +1246,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .about__title {
         /* Position */
         
@@ -1324,7 +1324,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .about__content {
         /* Position */
         
@@ -1376,7 +1376,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .about__houseplant-wrapper {
         /* Position */
         
@@ -1428,7 +1428,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .about__houseplant-img {
         /* Position */
         
@@ -1483,7 +1483,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .service {
         /* Position */
         
@@ -1584,7 +1584,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .service__title {
         /* Position */
         
@@ -1624,7 +1624,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .service__button-wrapper {
         /* Position */
         
@@ -1669,7 +1669,7 @@ body {
     /* Various */
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .service__button {
         /* Position */
     
@@ -1762,7 +1762,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .service__content-container {
         /* Position */
         
@@ -1931,7 +1931,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .service__definition-wrapper {
         /* Position */
         
@@ -1985,7 +1985,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .service__subtitle {
         /* Position */
         
@@ -2043,7 +2043,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .service__definition {
         /* Position */
         
@@ -2097,7 +2097,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices {
         /* Position */
         
@@ -2136,7 +2136,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__container {
         /* Position */
         
@@ -2194,7 +2194,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__functional {
         /* Position */
         
@@ -2255,7 +2255,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__title {
         /* Position */
         
@@ -2321,7 +2321,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__button-wrapper {
         /* Position */
         
@@ -2377,7 +2377,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__accordion-button {
         /* Position */
 
@@ -2436,7 +2436,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__accordion-button_vector:after {
         /* Position */
         left: 70%;
@@ -2493,7 +2493,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__content-container {
         /* Position */
         
@@ -2554,7 +2554,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__content-wrapper {
         /* Position */
         
@@ -2629,7 +2629,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__content-title {
         /* Position */
         
@@ -2682,7 +2682,7 @@ body {
     /* Various */
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__button {
         /* Position */
     
@@ -2772,7 +2772,7 @@ body {
     
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .prices__leaf-img {
         /* Position */
         
@@ -2827,7 +2827,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .contacts {
         /* Position */
         
@@ -2886,7 +2886,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .contacts__container {
         /* Position */
         
@@ -2984,7 +2984,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .contacts__content-img {
         /* Position */
         
@@ -3048,7 +3048,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .contacts__title {
         /* Position */
         
@@ -3110,7 +3110,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .contacts__functional-wrapper {
         /* Position */
         
@@ -3163,7 +3163,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .contacts__functional-accordion {
         /* Position */
 
@@ -3221,7 +3221,7 @@ body {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .contacts__accordion-button_vector:after {
         /* Position */
         left: 87%;
@@ -3278,7 +3278,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .footer {
         /* Position */
         
@@ -3589,7 +3589,7 @@ body {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 414px) {
     .footer__social-list {
         /* Position */
         
