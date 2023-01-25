@@ -1,12 +1,12 @@
 "use strict";
 
 const header__burgerMenu__func = () => {
-  const header__burgerMenu = document.querySelector('.header__burger-menu');
-  const header__burgerMenu_cutlet1 = document.querySelector('.header__burger-menu_cutlet1');
-  const header__burgerMenu_cutlet2 = document.querySelector('.header__burger-menu_cutlet2');
-  const body = document.querySelector('body');
+  let header__burgerMenu = document.querySelector('.header__burger-menu');
+  let header__burgerMenu_cutlet1 = document.querySelector('.header__burger-menu_cutlet1');
+  let header__burgerMenu_cutlet2 = document.querySelector('.header__burger-menu_cutlet2');
+  let body = document.querySelector('body');
   let nav = document.querySelector('.nav');
-  const nav__list = document.querySelector('.nav__list');
+  let nav__list = document.querySelector('.nav__list');
 
   let burgerMenuOptions = new Map ([
     [header__burgerMenu_cutlet1 , 'header__burger-menu_cutlet1_disabled'],
