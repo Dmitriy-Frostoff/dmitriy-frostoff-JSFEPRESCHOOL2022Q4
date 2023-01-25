@@ -295,6 +295,10 @@ body {
     /* Decoration */
 
     /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 
     /* Various */
 
@@ -339,7 +343,11 @@ body {
         /* Decoration */
 
         /* Animation */
-    
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+
         /* Various */
     
     }
@@ -443,7 +451,11 @@ body {
         /* Decoration */
 
         /* Animation */
-    
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        
         /* Various */
     
     }
@@ -638,6 +650,10 @@ body {
         /* Decoration */
         
         /* Animation */
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
 
         /* Various */
 
@@ -654,6 +670,10 @@ body {
         /* Decoration */
         
         /* Animation */
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
 
         /* Various */
 
@@ -678,11 +698,33 @@ body {
         background-color: #717171;
         
         /* Animation */
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
         
         /* Various */
         
     }
     
+    .header__burger-menu_active {
+        /* Position */
+
+        /* block-model */
+        
+        /* Typography */
+        
+        /* Decoration */
+
+        /* Animation */
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        /* Various */
+        
+    }
+
     .header__burger-menu_active::before {
         /* Position */
         top: 50%;
@@ -732,6 +774,10 @@ body {
         /* Decoration */
         
         /* Animation */
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
 
         /* Various */
 
