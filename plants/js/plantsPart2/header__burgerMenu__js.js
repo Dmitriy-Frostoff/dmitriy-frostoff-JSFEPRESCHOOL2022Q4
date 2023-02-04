@@ -39,7 +39,7 @@ const header__burgerMenu__func = () => {
   const burgerLinksBehavior = () => {
     // let burgerLinks = document.body.querySelectorAll('[id]');
     
-    nav.addEventListener('click', () => {
+    nav.addEventListener('click', (event) => {
       nav = event.target;
       if (header__burgerMenu.classList.contains('header__burger-menu_active')) {
         for (let el of burgerMenuOptions.keys()) {
