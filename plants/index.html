@@ -168,10 +168,34 @@
                 <div class="container prices__container">
                     <div class="prices__functional">
                         <h2 class="prices__title">Prices</h2>
-                        <div class="prices__button-wrapper">
-                            <button class="prices__accordion-button">Basics<span class="prices__accordion-button_vector"></span></button>
-                            <button class="prices__accordion-button">Standard<span class="prices__accordion-button_vector"></span></button>
-                            <button class="prices__accordion-button">Pro care<span class="prices__accordion-button_vector"></span></button>
+                        <div class="prices__options-container">
+                            <div class="prices__accordion-container">
+                                <button class="prices__accordion-button" data-button-id="prices__accordion-button1">Basics<span class="prices__accordion-button_vector" data-button__vector-id="button-vector1"></span></button>
+                                <div class="prices__accordion-description-container prices__elem_hidden" data-button__description-id="button-description1">
+                                    <span class="prices__accordion-line"></span>
+                                    <p class="prices__accordion-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__accordion-wage"><span class="prices__accordion-wage_color">$15 </span>/ per hour</p>
+                                    <a class="prices__accordion-order" href="#contacts" >Order</a>
+                                </div>
+                            </div>
+                            <div class="prices__accordion-container">
+                                <button class="prices__accordion-button" data-button-id="prices__accordion-button2">Standard<span class="prices__accordion-button_vector" data-button__vector-id="button-vector2"></span></button>
+                                <div class="prices__accordion-description-container prices__elem_hidden" data-button__description-id="button-description2">
+                                    <span class="prices__accordion-line"></span>
+                                    <p class="prices__accordion-text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__accordion-wage"><span class="prices__accordion-wage_color">$25 </span>/ per hour</p>
+                                    <a class="prices__accordion-order" href="#contacts" >Order</a>
+                                </div>
+                            </div>
+                            <div class="prices__accordion-container">
+                                <button class="prices__accordion-button" data-button-id="prices__accordion-button3">Pro care<span class="prices__accordion-button_vector"  data-button__vector-id="button-vector3"></span></button>
+                                <div class="prices__accordion-description-container prices__elem_hidden" data-button__description-id="button-description3">
+                                    <span class="prices__accordion-line"></span>
+                                    <p class="prices__accordion-text ">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                    <p class="prices__accordion-wage"><span class="prices__accordion-wage_color">$35 </span>/ per hour</p>
+                                    <a class="prices__accordion-order" href="#contacts" >Order</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="prices__content-container">
@@ -245,8 +269,10 @@
             <!-- footer end -->
         </div>
     </main>
+    <script src="./js/plantsPart2/header__burgerMenu__js.js"></script>
+    <script src="./js/plantsPart3/prices__accordion-button__js.js"></script>
     <script src="./js/plantsPart1/plants1SelfCheck.js"></script>
     <script src="./js/plantsPart2/plants1SelfCheckPart2.js"></script>
-    <script src="./js/plantsPart2/header__burgerMenu__js.js"></script>
+    <script src="./js/plantsPart3/plants1SelfCheckPart3.js"></script>
 </body>
 </html>
