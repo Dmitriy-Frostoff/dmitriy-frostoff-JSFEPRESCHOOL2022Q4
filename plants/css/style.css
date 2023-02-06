@@ -2517,6 +2517,23 @@ body {
 
 }
 
+@media (max-width: 540px) {
+    .prices__accordion-line::before {
+        /* Position */
+        
+        /* block-model */
+        width: 118px;
+        /* Typography */
+        
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
 .prices__accordion-wage {
     /* Position */
     
@@ -2560,7 +2577,7 @@ body {
     width: 86px;
     height: 25px;
     display: block;
-    margin: 12px 0 0;
+    margin: 12px 0 12px;
     padding: 3px 20px;
     /* Typography */
     font-weight: 700;
@@ -2864,6 +2881,23 @@ body {
 
 }
 
+@media (max-width: 540px) {
+    .prices__accordion-description-container {
+        /* Position */
+
+        /* block-model */
+        width: 180px;
+        padding: 0px 0px 0px 30px;
+        /* Typography */
+        
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
 .prices__elem_hidden {
     /* Position */
     
