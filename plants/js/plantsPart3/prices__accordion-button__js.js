@@ -9,21 +9,70 @@ window.onload = function () {
 const pricesOptionsButtonHandler = () => {
   const prices__optionsContainer = document.querySelector('.prices__options-container');
   prices__optionsContainer.addEventListener('click', (event) => {
+    const prices__AllButtonsOfAccordion = document.querySelectorAll('.prices__accordion-button');
 
     let clickedElem = event.target;
 
     if ( clickedElem.closest('.prices__accordion-button') ) {
 
-      removeSelectionFromButton();
+      // //test area start
+      // // console.log( !(clickedElem.dataset.buttonId === [...prices__AllButtonsOfAccordion].find(getActiveButton)?.dataset.buttonId) );
+      // console.log(clickedElem.classList === 'prices__accordion-button_active');
 
-      addSelectionToButton(clickedElem);
+      // //experiment
+      // if ( !clickedElem.classList.contains( 'prices__accordion-button_active' ) &&
+      //   !prices__optionsContainer.outerHTML.includes( 'prices__accordion-button_active' )
+      // ) {
+      //   console.log(`1 do addSelectionToButton`);
+      //   addSelectionToButton(clickedElem);
+      // }
+      
+      
+      // return;
+      // //test area end
 
-      // removeSelectionToButton(clickedElem);
-      if ( clickedElem.classList.contains( 'prices__accordion-button_active' ) ) {
+      if ( !clickedElem.classList.contains( 'prices__accordion-button_active' ) &&
+        !prices__optionsContainer.outerHTML.includes( 'prices__accordion-button_active' )
+      ) {
+        console.log(`1 do addSelectionToButton`);
+        addSelectionToButton(clickedElem);
+      }
+
+      else if ((clickedElem.dataset.buttonId === [...prices__AllButtonsOfAccordion].find(compareIdsClickedElemAllAccordionButtons)?.dataset.buttonId) &&
+        clickedElem.classList.contains('prices__accordion-button_active')
+        ) {
+          console.log(`2 do removeSelectionFromButton`);
+          removeSelectionFromButton();
+      }
+
+      
+      else if ( !(clickedElem.dataset.buttonId === [...prices__AllButtonsOfAccordion].find(getActiveButton)?.dataset.buttonId) && 
+        prices__optionsContainer.outerHTML.includes( 'prices__accordion-button_active' ) ) {
+          console.log(`3 do removeSelection addSelection`);
+          removeSelectionFromButton();
+          addSelectionToButton(clickedElem);
+      }
+
+      else {
+        console.log(`nothing`);
       }
     }
   })
   };
+
+const compareIdsClickedElemAllAccordionButtons = (elem) => {
+  let clickedElem = event.target;
+  if ( elem.dataset.buttonId === clickedElem.dataset.buttonId ) {
+    return elem.dataset.buttonId;
+  }
+}
+
+const getActiveButton = (item) => {
+  if ( item.classList === 'prices__accordion-button_active' ) {
+    console.log(`item.classList`);
+    return item;
+  }
+}
 
 const removeSelectionFromButton = () => {
   const prices__AllButtonsOfAccordion = document.querySelectorAll('.prices__accordion-button');
@@ -115,56 +164,56 @@ const linkArrowsWithButton = (clickedElem, buttonArrowsSync) => {
 
 // }
 
-const removeSelectionToButton = (clickedElem) => {
-  const prices__optionsContainer = document.querySelector('.prices__options-container');
+// const removeSelectionToButton = (clickedElem) => {
+//   const prices__optionsContainer = document.querySelector('.prices__options-container');
   
-  const prices__accordionButton = document.querySelector('.prices__accordion-button');
-  const prices__accordionButton_active = document.querySelector('.prices__accordion-button_active');
-  const prices__accordionButton_vector = document.querySelector('.prices__accordion-button_vector');
-  const prices__accordionDescriptionContainer = document.querySelector('.prices__accordion-description-container');
+//   const prices__accordionButton = document.querySelector('.prices__accordion-button');
+//   const prices__accordionButton_active = document.querySelector('.prices__accordion-button_active');
+//   const prices__accordionButton_vector = document.querySelector('.prices__accordion-button_vector');
+//   const prices__accordionDescriptionContainer = document.querySelector('.prices__accordion-description-container');
 
-  const buttonDescriptionSync = {
-    'prices__accordion-button1' : 'button-description1',
-    'prices__accordion-button2' : 'button-description2',
-    'prices__accordion-button3' : 'button-description3'
-  };
+//   const buttonDescriptionSync = {
+//     'prices__accordion-button1' : 'button-description1',
+//     'prices__accordion-button2' : 'button-description2',
+//     'prices__accordion-button3' : 'button-description3'
+//   };
 
-  const buttonArrowsSync = {
-    'prices__accordion-button1' : 'button-vector1',
-    'prices__accordion-button2' : 'button-vector2',
-    'prices__accordion-button3' : 'button-vector3'
-  };
+//   const buttonArrowsSync = {
+//     'prices__accordion-button1' : 'button-vector1',
+//     'prices__accordion-button2' : 'button-vector2',
+//     'prices__accordion-button3' : 'button-vector3'
+//   };
   
-  clickedElem.classList.toggle('prices__accordion-button_active');
+//   clickedElem.classList.toggle('prices__accordion-button_active');
 
-  deleteLinkDescriptionWithButton(clickedElem, buttonDescriptionSync);
+//   deleteLinkDescriptionWithButton(clickedElem, buttonDescriptionSync);
 
-  deleteLinkArrowsWithButton(clickedElem, buttonArrowsSync);
-}
+//   deleteLinkArrowsWithButton(clickedElem, buttonArrowsSync);
+// }
 
-//I created this code for 4 ours!!! But it hard to read, so it need to be refactored((((((((( ::crying::
-const deleteLinkDescriptionWithButton = (clickedElem, buttonDescriptionSync) => {
-  Object.keys(buttonDescriptionSync).forEach( (elem) => {
-    if ( elem === clickedElem.dataset.buttonId ) {
-      let elemWatch = document.querySelectorAll('.prices__accordion-description-container');
-      elemWatch.forEach((item) => {
-        if (item.dataset.button__descriptionId === buttonDescriptionSync[elem]) {
-          return item.classList.toggle('prices__elem_hidden');
-        }
-      })
-    }
-  })
-}
+// //I created this code for 4 ours!!! But it hard to read, so it need to be refactored((((((((( ::crying::
+// const deleteLinkDescriptionWithButton = (clickedElem, buttonDescriptionSync) => {
+//   Object.keys(buttonDescriptionSync).forEach( (elem) => {
+//     if ( elem === clickedElem.dataset.buttonId ) {
+//       let elemWatch = document.querySelectorAll('.prices__accordion-description-container');
+//       elemWatch.forEach((item) => {
+//         if (item.dataset.button__descriptionId === buttonDescriptionSync[elem]) {
+//           return item.classList.toggle('prices__elem_hidden');
+//         }
+//       })
+//     }
+//   })
+// }
 
-const deleteLinkArrowsWithButton = (clickedElem, buttonArrowsSync) => {
-  Object.keys(buttonArrowsSync).forEach( (elem) => {
-    if ( elem === clickedElem.dataset.buttonId ) {
-      let elemWatch = document.querySelectorAll('.prices__accordion-button_vector');
-      elemWatch.forEach((item) => {
-        if (item.dataset.button__vectorId === buttonArrowsSync[elem]) {
-          return item.classList.toggle('prices__accordion-button_vector-active');
-        }
-      })
-    }
-  })
-}
+// const deleteLinkArrowsWithButton = (clickedElem, buttonArrowsSync) => {
+//   Object.keys(buttonArrowsSync).forEach( (elem) => {
+//     if ( elem === clickedElem.dataset.buttonId ) {
+//       let elemWatch = document.querySelectorAll('.prices__accordion-button_vector');
+//       elemWatch.forEach((item) => {
+//         if (item.dataset.button__vectorId === buttonArrowsSync[elem]) {
+//           return item.classList.toggle('prices__accordion-button_vector-active');
+//         }
+//       })
+//     }
+//   })
+// }
