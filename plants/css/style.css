@@ -187,6 +187,27 @@ body {
     }
 }
 
+/* common class start */
+
+.hidden {
+    /* Position */
+    
+    /* block-model */
+    display: none;
+
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
+}
+
+/* common class end */
+
+
 /* Header start*/
 
 .header {
@@ -2458,9 +2479,128 @@ body {
 
 }
 
+.prices__accordion-text {
+    /* Position */
+    
+    /* block-model */
+    max-width: 169px;
+    margin: 2px 0 0;
+    /* Typography */
+    text-indent: 0px;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
 
+}
 
-.prices__button-wrapper {
+.prices__accordion-line::before {
+    /* Position */
+    
+    /* block-model */
+    display: block;
+    width: 164px;
+    margin: -4px 0px 0px 0px;
+    /* Typography */
+    
+    /* Decoration */
+    content: "";
+    border-bottom: 0.5px solid #AEA1A1;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices__accordion-wage {
+    /* Position */
+    
+    /* block-model */
+    margin: 6px 0 0;
+    /* Typography */
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices__accordion-wage_color {
+    /* Position */
+    
+    /* block-model */
+    
+    /* Typography */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #E06733;
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices__accordion-order {
+    /* Position */
+    
+    /* block-model */
+    width: 86px;
+    height: 25px;
+    display: block;
+    margin: 12px 0 0;
+    padding: 3px 20px;
+    /* Typography */
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #717171;
+    text-decoration: none;
+    /* Decoration */
+    background: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+
+.prices__accordion-order:active,
+.prices__accordion-order_hovered {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    color:#FFFFFF;
+    /* Decoration */
+    background: #E06733;
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+
+.prices__options-container {
     /* Position */
     
     /* block-model */
@@ -2483,7 +2623,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .prices__button-wrapper {
+    .prices__options-container {
         /* Position */
         
         /* block-model */
@@ -2505,7 +2645,7 @@ body {
 }
 
 @media (max-width: 540px) {
-    .prices__button-wrapper {
+    .prices__options-container {
         /* Position */
         
         /* block-model */
@@ -2525,6 +2665,21 @@ body {
         /* Various */
     
     }
+}
+
+.prices__accordion-container {
+    /* Position */
+    position: relative;
+    /* block-model */
+
+    /* Typography */
+    
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
 }
 
 .prices__accordion-button {
@@ -2582,8 +2737,7 @@ body {
     }
 }
 
-.prices__accordion-button:hover,
-.prices__accordion-button:active {
+.prices__accordion-button:hover {
     /* Position */
 
     /* block-model */
@@ -2593,6 +2747,40 @@ body {
     /* Decoration */
     background: #E06733;
     cursor: pointer;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.prices__accordion-button_active {
+    /* Position */
+    z-index: 5;
+    /* block-model */
+    
+    /* Typography */
+    color: #000000;
+    /* Decoration */
+    background: #D6E7D2;
+    cursor: default;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.prices__accordion-button_active:hover {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    color: #000000;
+    /* Decoration */
+    background: #D6E7D2;
+    cursor: default;
     /* Animation */
 
     /* Various */
@@ -2619,6 +2807,21 @@ body {
 
 }
 
+.prices__accordion-button_vector-active:after {
+    /* Position */
+    
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+    transform: rotate(180deg);
+    /* Various */
+
+}
+
 @media (max-width: 540px) {
     .prices__accordion-button_vector:after {
         /* Position */
@@ -2634,6 +2837,47 @@ body {
         /* Various */
     
     }
+}
+
+.prices__accordion-description-container {
+    /* Position */
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    /* block-model */
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px 0px 40px;
+    /* Typography */
+    
+    /* Decoration */
+    background: #D6E7D2;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.prices__elem_hidden {
+    /* Position */
+    
+    /* block-model */
+    display: none;
+
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+
+    /* Various */
+
 }
 
 .prices__content-container {
