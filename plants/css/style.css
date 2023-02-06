@@ -2646,9 +2646,11 @@ body {
         /* block-model */
         flex-basis: 72%;
         width: 330px;
-        justify-content: space-between;
+        
+        /* justify-content: space-between; */ 
         margin: 0 0 11px;
-        padding: 35px 0 30px;
+        
+        /* padding: 35px 0 30px; */
 
         /* Typography */
         
@@ -2772,7 +2774,7 @@ body {
 
 .prices__accordion-button_active {
     /* Position */
-    z-index: 5;
+    /* z-index: 5; */ /*by this menu drops on other buttons*/
     /* block-model */
     
     /* Typography */
@@ -2858,10 +2860,10 @@ body {
 
 .prices__accordion-description-container {
     /* Position */
-    position: absolute;
+    /* position: absolute; 
     z-index: 5;
-    top: 50px;
-    /* block-model */
+    top: 50px; */
+    /* block-model */ /*by this menu drops on other buttons*/
     width: 250px;
     display: flex;
     flex-direction: column;
