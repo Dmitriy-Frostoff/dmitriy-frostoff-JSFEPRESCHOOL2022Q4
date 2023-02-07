@@ -11,11 +11,6 @@ window.onload = function () {
 const serviceOptionsButtonHandler = () => {
   const service__optionsContainer = document.querySelector('.container.service__container');
 
-  //test area start
-  // console.log(service__optionsContainer);
-  // return;
-  //test area end
-  
   service__optionsContainer.addEventListener('click', (event) => {
     const service__optionsAllButtons = document.querySelectorAll('.service__button');
     
@@ -23,9 +18,6 @@ const serviceOptionsButtonHandler = () => {
     let clickedElem = event.target;
     
     if ( clickedElem.closest('.service__button') ) {
-      
-      //test area start
-      
       let activeButtonClassCount = service__optionsContainer.outerHTML.match(/service__button_active/g) || [];
 
       if ( !clickedElem.classList.contains('service__button_active')) {
@@ -46,34 +38,6 @@ const serviceOptionsButtonHandler = () => {
     else {
       console.log(`nothing`);
     } 
-      return;
-      // test area end 
-      
-      if ( !clickedElem.classList.contains('service__button_active') &&
-        !service__optionsContainer.outerHTML.includes('service__button_active')
-      ) {
-        // console.log(`1 do addSelectionToServiceButton`);
-        addSelectionToServiceButton(clickedElem);
-      }
-
-      else if ((clickedElem.dataset.buttonId === [...service__optionsAllButtons].find(compareIdsClickedElemAllServiceButtons)?.dataset.buttonId) &&
-        clickedElem.classList.contains('service__button_active')
-        ) {
-          // console.log(`2 do removeSelectionFromServiceButton`);
-          removeSelectionFromServiceButton();
-      }
-
-      
-      else if ( !(clickedElem.dataset.buttonId === [...service__optionsAllButtons].find(getActiveServiceButton)?.dataset.buttonId) && 
-        service__optionsContainer.outerHTML.includes('service__button_active')) {
-          // console.log(`3 do removeSelection addSelection`);
-          removeSelectionFromServiceButton();
-          addSelectionToServiceButton(clickedElem);
-      }
-
-      else {
-        console.log(`nothing`);
-      }
     }
   })
   };
@@ -166,17 +130,6 @@ const removeActiveClassFromCurrentCard = (cardElemId, buttonOptionSync) => {
 }
 
 const removeSelectionFromServiceButton = (clickedElem) => {
-  // const service__optionsAllButtons = document.querySelectorAll('.service__button');
-  // const service__optionsAllCards = document.querySelectorAll('.service__item')
-  
-  // service__optionsAllButtons.forEach((button) => {
-  //   button.classList.remove('service__button_active');
-  // })
-  
-  // service__optionsAllCards.forEach((button) => {
-  //   button.classList.remove('service__item_active');
-  // })
-
   if (!clickedElem.classList.contains('service__button')) {
     return;
   }
