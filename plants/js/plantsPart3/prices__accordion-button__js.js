@@ -6,6 +6,8 @@ window.onload = function () {
 
 }
 
+//Prices section js functions start
+
 const pricesOptionsButtonHandler = () => {
   const prices__optionsContainer = document.querySelector('.prices__options-container');
 
@@ -136,3 +138,5 @@ const linkArrowsWithPricesButton = (clickedElem, buttonArrowsSync) => {
     }
   })
 }
+
+//Prices section js functions end
