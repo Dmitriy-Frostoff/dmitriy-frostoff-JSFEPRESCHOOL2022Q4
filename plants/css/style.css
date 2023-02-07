@@ -1892,8 +1892,7 @@ body {
     }
 }
 
-.service__button:hover,
-.service__button:active {
+.service__button_active {
     /* Position */
 
     /* block-model */
@@ -1903,6 +1902,22 @@ body {
     /* Decoration */
     background: #E06733;
     cursor: pointer;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.service__button:hover {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    
+    /* Decoration */
+    cursor: pointer;
+    
     /* Animation */
 
     /* Various */
@@ -2002,7 +2017,31 @@ body {
     /* Decoration */
     
     /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    /* Various */
+
+}
+
+.service__item_active {
+    /* Position */
     
+    /* block-model */
+        
+    /* Typography */
+    
+    /* Decoration */
+    filter: blur(2px);
+
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
     /* Various */
 
 }
@@ -2017,7 +2056,7 @@ body {
     /* Decoration */
     
     /* Animation */
-    
+
     /* Various */
 
 }
