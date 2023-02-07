@@ -24,23 +24,23 @@ const serviceOptionsButtonHandler = () => {
       if ( !clickedElem.classList.contains('service__button_active') &&
         !service__optionsContainer.outerHTML.includes('service__button_active')
       ) {
-        // console.log(`1 do addSelectionToButton`);
-        addSelectionToButton(clickedElem);
+        // console.log(`1 do addSelectionToServiceButton`);
+        addSelectionToServiceButton(clickedElem);
       }
 
       else if ((clickedElem.dataset.buttonId === [...service__optionsAllButtons].find(compareIdsClickedElemAllServiceButtons)?.dataset.buttonId) &&
         clickedElem.classList.contains('service__button_active')
         ) {
-          // console.log(`2 do removeSelectionFromButton`);
-          removeSelectionFromButton();
+          // console.log(`2 do removeSelectionFromServiceButton`);
+          removeSelectionFromServiceButton();
       }
 
       
-      else if ( !(clickedElem.dataset.buttonId === [...service__optionsAllButtons].find(getActiveButton)?.dataset.buttonId) && 
+      else if ( !(clickedElem.dataset.buttonId === [...service__optionsAllButtons].find(getActiveServiceButton)?.dataset.buttonId) && 
         service__optionsContainer.outerHTML.includes('service__button_active')) {
           // console.log(`3 do removeSelection addSelection`);
-          removeSelectionFromButton();
-          addSelectionToButton(clickedElem);
+          removeSelectionFromServiceButton();
+          addSelectionToServiceButton(clickedElem);
       }
 
       else {
@@ -57,13 +57,13 @@ const compareIdsClickedElemAllServiceButtons = (elem) => {
   }
 }
 
-const getActiveButton = (item) => {
+const getActiveServiceButton = (item) => {
   if (item.getAttribute('class').includes('service__button_active')) {
     return item;
   }
 }
 
-const removeSelectionFromButton = () => {
+const removeSelectionFromServiceButton = () => {
   const service__optionsAllButtons = document.querySelectorAll('.service__button');
   const service__optionsAllCards = document.querySelectorAll('.service__item')
   
@@ -77,7 +77,7 @@ const removeSelectionFromButton = () => {
 }
 
 
-const addSelectionToButton = (clickedElem) => {
+const addSelectionToServiceButton = (clickedElem) => {
   const service__optionsAllButtons = document.querySelectorAll('.service__button');
 
   const buttonOptionSync = {
@@ -92,12 +92,12 @@ const addSelectionToButton = (clickedElem) => {
 
   clickedElem.classList.add('service__button_active');
 
-  linkDescriptionWithButton(clickedElem, buttonOptionSync);
+  linkDescriptionWithServiceButton(clickedElem, buttonOptionSync);
 }
 
 //I created this code for 4 ours!!! But it hard to read, so it need to be refactored((((((((( ::crying::
 
-const linkDescriptionWithButton = (clickedElem, buttonOptionSync) => {
+const linkDescriptionWithServiceButton = (clickedElem, buttonOptionSync) => {
   Object.keys(buttonOptionSync).forEach((elem) => {
     if (elem === clickedElem.dataset.buttonId) {
       let elemWatch = document.querySelectorAll('.service__item');
@@ -116,3 +116,4 @@ const linkDescriptionWithButton = (clickedElem, buttonOptionSync) => {
     }
   })
 }
+
