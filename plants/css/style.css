@@ -186,8 +186,9 @@ body {
     
     }
 }
-
-/* common class start */
+/* =======================================================================================================*/
+/* =========================================  common class start =========================================*/
+/* =======================================================================================================*/
 
 .hidden {
     /* Position */
@@ -205,10 +206,14 @@ body {
 
 }
 
-/* common class end */
+/* =======================================================================================================*/
+/* =========================================  common class end =========================================*/
+/* =======================================================================================================*/
 
 
-/* Header start*/
+/* =======================================================================================================*/
+/* =========================================   Header start =========================================*/
+/* =======================================================================================================*/
 
 .header {
     /* Position */
@@ -805,10 +810,14 @@ body {
     }
 
 }
-/* Header end */
+/* =======================================================================================================*/
+/* =========================================  Header end =========================================*/
+/* =======================================================================================================*/
 
-/* Welcome section start */
 
+/* =======================================================================================================*/
+/* =========================================  Welcome section start =========================================*/
+/* =======================================================================================================*/
 .welcome {
     /* Position */
 
@@ -1280,9 +1289,15 @@ body {
 
 }
 
-/* Welcome section end */
+/* =======================================================================================================*/
+/* =========================================  Welcome section end =========================================*/
+/* =======================================================================================================*/
 
-/* About section start */
+
+/* =======================================================================================================*/
+/* =========================================  About section start =========================================*/
+/* =======================================================================================================*/
+
 .about {
     /* Position */
     
@@ -1651,9 +1666,14 @@ body {
     }
 }
 
-/* About section end */
+/* =======================================================================================================*/
+/* =========================================  About section end =========================================*/
+/* =======================================================================================================*/
 
-/* service section start */
+
+/* =======================================================================================================*/
+/* =========================================  service section start =========================================*/
+/* =======================================================================================================*/
 
 .service {
     /* Position */
@@ -2303,10 +2323,14 @@ body {
     
     }
 }
+/* =======================================================================================================*/
+/* =========================================  service section end =========================================*/
+/* =======================================================================================================*/
 
-/* service section end */
+/* =======================================================================================================*/
+/* =========================================  Prices section start =========================================*/
+/* =======================================================================================================*/
 
-/* Prices section start */
 .prices {
     /* Position */
     
@@ -2860,7 +2884,7 @@ body {
     background-image: url(../assets/svg/4_prices/accordion_btn.svg);
     background-repeat: no-repeat;
     /* Animation */
-    
+    transition: all 1s ease 0;
     /* Various */
 
 }
@@ -2873,9 +2897,11 @@ body {
     /* Typography */
 
     /* Decoration */
-
+    content: "";
+    background-image: url(../assets/svg/4_prices/accordion_btn-active.svg);
+    background-repeat: no-repeat;
     /* Animation */
-    transform: rotate(180deg);
+    transition: all 1s ease 0;
     /* Various */
 
 }
@@ -2937,7 +2963,7 @@ body {
     
     }
 }
-.prices__elem_hidden {
+.elem_hidden {
     /* Position */
     
     /* block-model */
@@ -3266,9 +3292,6 @@ body {
         /* Various */
     
     }
-    /* Prices section end */
-    
-    /* Contacts section start */
     
 }
 
@@ -3289,10 +3312,14 @@ body {
     
     }
 }
+/* =======================================================================================================*/
+/* =========================================  Prices section end =========================================*/
+/* =======================================================================================================*/
 
-/* Prices section end */
 
-/* Contacts section start */
+/* =======================================================================================================*/
+/* =========================================  Contacts section start =========================================*/
+/* =======================================================================================================*/
 
 .contacts {
     /* Position */
@@ -3579,6 +3606,7 @@ body {
     align-content: space-around;
     justify-content: flex-start;
     align-items: center;
+    gap: 47px;
     margin: 0;
     padding: 95px 0 0;
 
@@ -3628,7 +3656,22 @@ body {
     }
 }
 
-.contacts__functional-accordion {
+.contacts__drop-menu-container {
+    /* Position */
+    position: relative;
+    /* block-model */
+    
+    /* Typography */
+
+    /* Decoration */
+    
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts__city-button {
     /* Position */
     position: relative;
     /* block-model */
@@ -3663,8 +3706,30 @@ body {
 
 }
 
+.contacts__city-button_active {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+    background: #C1E698;
+    box-shadow: none;
+    border: 1px solid #D6E7D2;
+    border-radius: 0px;
+    cursor: pointer;
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+
 @media (max-width: 540px) {
-    .contacts__functional-accordion {
+    .contacts__city-button {
         /* Position */
 
         /* block-model */
@@ -3682,8 +3747,7 @@ body {
 }
 
 
-.contacts__functional-accordion:hover,
-.contacts__functional-accordion:active {
+.contacts__city-button:hover {
     /* Position */
 
     /* block-model */
@@ -3701,7 +3765,7 @@ body {
 
 }
 
-.contacts__accordion-button_vector:after {
+.contacts__city-button_vector:after {
     /* Position */
     position: absolute;
     top: 34%;
@@ -3716,13 +3780,32 @@ body {
     background-image: url(../assets/svg/5_contacts/accordion_btn.svg);
     background-repeat: no-repeat;
     /* Animation */
-    
+    transition: all 0.5s ease 0s;
+
+    /* Various */
+
+}
+
+.contacts__city-button_vector-active:after {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+
+    /* Decoration */
+    content: "";
+    background-image: url(../assets/svg/5_contacts/drop_btn_active.svg);
+    background-repeat: no-repeat;
+    /* Animation */
+    transition: all 0.5s ease 0s;
+
     /* Various */
 
 }
 
 @media (max-width: 540px) {
-    .contacts__accordion-button_vector:after {
+    .contacts__city-button_vector:after {
         /* Position */
         left: 87%;
 
@@ -3739,10 +3822,445 @@ body {
     }
 }
 
+.contacts__city-list {
+    /* Position */
+    position: absolute;
+    top: 50px;
+    z-index: 5;
+    /* block-model */
+    width: 450px;
+    height: 234px;
+    padding: 27px 35px 31px;
+    /* Typography */
 
-/* Contacts section end */
+    /* Decoration */
+    background: #DCE9D9;
+    /* Animation */
+    
+    /* Various */
 
-/* Footer start */
+}
+
+@media (max-width: 540px) {
+    .contacts__city-list {
+        /* Position */
+        position: static;
+        /* block-model */
+        width: 300px;
+        height: 234px;
+        padding: 27px 35px 31px;
+        /* Typography */
+    
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+.contacts__city-list-container {
+    /* Position */
+
+    /* block-model */
+    width: 84.444%;
+    height: 176px;
+
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts__city-item {
+    /* Position */
+    position: relative;
+    /* block-model */
+    width: 100%;
+    height: 35px;
+
+    /* Typography */
+    letter-spacing: 0.05em;
+    color: #499A18;
+
+    /* Decoration */
+
+    /* Animation */
+    transition: color 0.5s ease-in 0s;
+
+    /* Various */
+
+}
+
+.contacts__city-item::after {
+    /* Position */
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    /* block-model */
+    width: 100%;
+    height: 1px;
+
+    /* Typography */
+    content: "";
+
+    /* Decoration */
+    background-color: #717171;
+
+    /* Animation */
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.5s linear 0s;
+    
+    /* Various */
+
+}
+
+.contacts__city-item:hover::after {
+    /* Position */
+
+    /* block-model */
+   
+    /* Typography */
+   
+    /* Decoration */
+
+    /* Animation */
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    transition: transform 0.5s linear 0s;
+    
+    /* Various */
+
+}
+
+.contacts__city-item:hover {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+    color: #717171;
+
+    /* Decoration */
+    cursor: pointer;
+
+    /* Animation */
+    transition: color 0.5s ease-in 0s;
+    
+    /* Various */
+
+}
+
+.contacts__adress-container {
+    /* Position */
+
+    /* block-model */
+    width: 448px;
+    height: 214px;
+    padding: 17px 76px 32px 33px;
+    /* Typography */
+
+    /* Decoration */
+    background: #EDF2EC;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    /* Animation */
+    
+    /* Various */
+
+}
+
+@media (max-width: 540px) {
+    .contacts__adress-container {
+        /* Position */
+    
+        /* block-model */
+        width: 282px;
+        height: 212px;
+        padding: 23px 20px 23px 36px;
+        gap: 0px;
+        /* Typography */
+    
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+.contacts__adress-wrapper {
+    /* Position */
+
+    /* block-model */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts__info-wrapper {
+    /* Position */
+
+    /* block-model */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    /* Typography */
+
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+@media (max-width: 540px) {
+    .contacts__info-wrapper {
+        /* Position */
+    
+        /* block-model */
+        gap: 0px;
+        /* Typography */
+    
+        /* Decoration */
+    
+        /* Animation */
+        
+        /* Various */
+    
+    }
+
+    .contacts__info-wrapper div:first-child {
+        /* Position */
+    
+        /* block-model */
+        flex: 0 0 30%;
+        /* Typography */
+    
+        /* Decoration */
+    
+        /* Animation */
+        
+        /* Various */
+    
+    }
+
+    .contacts__info-wrapper div:last-child {
+        /* Position */
+    
+        /* block-model */
+        flex: 0 0 65%;
+
+        /* Typography */
+    
+        /* Decoration */
+    
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+.contacts__info-container {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+@media (max-width: 540px) {
+    .contacts__info-container p:last-child {
+        /* Position */
+    
+        /* block-model */
+        
+        /* Typography */
+        line-height: 20px;
+        
+        /* Decoration */
+    
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+.contacts__info-title {
+    /* Position */
+
+    /* block-model */
+    margin: 0;
+    /* Typography */
+    letter-spacing: 0.05em;
+    color: #000000;
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts__info-content {
+    /* Position */
+
+    /* block-model */
+    margin: 0;
+
+    /* Typography */
+    letter-spacing: 0.05em;
+    color: #717171;
+
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts__info-call-wrapper {
+    /* Position */
+
+    /* block-model */
+    width: 122px;
+    height: 26px;
+    padding: 7px 29px;
+    margin: 24px 0 0 129px;
+    /* Typography */
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    
+    /* Decoration */
+    border: 1px solid #E06733;
+    border-radius: 5px;
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+@media (max-width: 540px) {
+    .contacts__info-call-wrapper {
+        /* Position */
+    
+        /* block-model */
+        margin: 17px auto 0;
+        /* Typography */
+        
+        /* Decoration */
+
+        /* Animation */
+        
+        /* Various */
+    
+    }
+}
+
+.contacts__info-call {
+    /* Position */
+
+    /* block-model */
+
+    /* Typography */
+    color: #717171;
+    text-decoration: none;
+    
+    /* Decoration */
+
+    /* Animation */
+    
+    /* Various */
+
+}
+
+.contacts__info-call:hover {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+
+    /* Decoration */
+    background: #C1E698;
+    border: 1px solid #D6E7D2;
+    border-radius: 0px;
+    cursor: pointer;
+    /* Animation */
+
+    /* Various */
+
+}
+
+.contacts__info-call:visited {
+    /* Position */
+
+    /* block-model */
+    
+    /* Typography */
+
+    /* Decoration */
+    color: #717171;
+    /* Animation */
+
+    /* Various */
+
+}
+
+/* =======================================================================================================*/
+/* =========================================  Contacts section end =========================================*/
+/* =======================================================================================================*/
+
+
+/* =======================================================================================================*/
+/* =========================================  Footer start =========================================*/
+/* =======================================================================================================*/
 
 .footer {
     /* Position */
@@ -4226,4 +4744,6 @@ body {
     
 }
 
-/* Footer end */
+/* =======================================================================================================*/
+/* =========================================  Footer end =========================================*/
+/* =======================================================================================================*/

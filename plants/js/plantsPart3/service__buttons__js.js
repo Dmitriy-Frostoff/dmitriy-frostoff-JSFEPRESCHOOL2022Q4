@@ -138,7 +138,7 @@ const removeActiveClassFromCurrentServiceCard = (serviceCardElemId, buttonOption
 }
 //=====================================  selection to buttons end =====================================
 
-//=====================================  removing to buttons start =====================================
+//=====================================  removing selection from buttons start =====================================
 
 const removeSelectionFromServiceButton = (clickedElem) => {
   if (!clickedElem.classList.contains('service__button')) {
@@ -202,7 +202,7 @@ const unblurAllCards = () => {
     activeElem.classList.remove('service__item_active');
   })
 }
-//=====================================  removing to buttons start =====================================
+//=====================================  removing selection from buttons end =====================================
 
 //=================================================================================================================
 //    Service section js functions end

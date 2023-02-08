@@ -7,9 +7,9 @@ window.onload = function () {
 }
 
 //=================================================================================================================
-//    Prices section js functions start
+//    Contacts section js functions start
 //=================================================================================================================
-
+//TODO change names and adopt functions for contats section drop menu
 //=====================================  add handler to buttons start  =====================================
 
 const pricesOptionsButtonHandler = () => {
@@ -81,7 +81,7 @@ const removeSelectionFromPricesButton = () => {
   })
 
   prices__allDescriptionContainerOfAccordion.forEach((item) => {
-    item.classList.add('elem_hidden');
+    item.classList.add('prices__elem_hidden');
   })
 }
 //=====================================  remove selections from buttons end  =====================================
@@ -137,7 +137,7 @@ const removeClassHiddenFromPricesItems = (pricesCardElemId, buttonDescriptionSyn
 
     pricesElemToWatch.forEach((item) => {
       if (item.getAttribute('data-button__description-id').includes(buttonDescriptionSync[pricesCardElemId])) {
-        item.classList.remove('elem_hidden');
+        item.classList.remove('prices__elem_hidden');
       }
     });
     }
@@ -185,5 +185,5 @@ const removeClassHiddenFromPricesItems = (pricesCardElemId, buttonDescriptionSyn
 //=====================================  add linking arrows with buttons end  =====================================
 
 //=================================================================================================================
-//    Prices section js functions end
+//    Contacts section js functions end
 //=================================================================================================================
