@@ -5,8 +5,11 @@ window.onload = function () {
   serviceOptionsButtonHandler();
   
 }
+//=================================================================================================================
+//    Service section js functions start
+//=================================================================================================================
 
-//Service section js functions start
+//=====================================  add Handler to the buttons =====================================
 
 const serviceOptionsButtonHandler = () => {
   const service__optionsContainer = document.querySelector('.container.service__container');
@@ -42,6 +45,8 @@ const serviceOptionsButtonHandler = () => {
   })
   };
 
+//=====================================  add handler to buttons end  =====================================
+
 const compareIdsClickedElemAllServiceButtons = (elem) => {
   let clickedElem = event.target;
   if (elem.dataset.buttonId === clickedElem.dataset.buttonId) {
@@ -54,6 +59,9 @@ const getActiveServiceButton = (item) => {
     return item;
   }
 }
+
+//=====================================  selection to buttons start =====================================
+
 
 const addSelectionToServiceButton = (clickedElem) => {
   if (!clickedElem.classList.contains('service__button')) {
@@ -80,16 +88,16 @@ const linkDescriptionWithServiceButton = () => {
     'service__button-lawn' : ['service__lawn-care-content0']
   };
   
-  const cardElemId = getKeyEqualToElemId(clickedElem, buttonOptionSync);
+  const serviceCardElemId = getServiceKeyEqualToElemId(clickedElem, buttonOptionSync);
   
   if (activeButtonClassCount.length === 1) {
-    addClassActiveToItems();
+    addClassActiveToServiceItems();
 
-    removeActiveClassFromCurrentCard(cardElemId, buttonOptionSync);
+    removeActiveClassFromCurrentServiceCard(serviceCardElemId, buttonOptionSync);
   }
 
   else if (activeButtonClassCount.length === 2) {
-    removeActiveClassFromCurrentCard(cardElemId, buttonOptionSync);
+    removeActiveClassFromCurrentServiceCard(serviceCardElemId, buttonOptionSync);
   }
   
   else {
@@ -98,24 +106,24 @@ const linkDescriptionWithServiceButton = () => {
   
 }
 
-let getKeyEqualToElemId = (clickedElem, buttonOptionSync) => {
-  return Object.keys(buttonOptionSync).filter((cardElemId) => {
-    if (cardElemId === clickedElem.dataset.buttonId) {
-      return cardElemId;
+const getServiceKeyEqualToElemId = (clickedElem, buttonOptionSync) => {
+  return Object.keys(buttonOptionSync).filter((serviceCardElemId) => {
+    if (serviceCardElemId === clickedElem.dataset.buttonId) {
+      return serviceCardElemId;
     }
     }
   )};
 
 
-const addClassActiveToItems = () => {
+const addClassActiveToServiceItems = () => {
   let elemToWatch = document.querySelectorAll('.service__item');
   elemToWatch.forEach((card) => {
     card.classList.add('service__item_active');
   })
 }
 
-const removeActiveClassFromCurrentCard = (cardElemId, buttonOptionSync) => {
-  buttonOptionSync[cardElemId].forEach((optionElemId) => {
+const removeActiveClassFromCurrentServiceCard = (serviceCardElemId, buttonOptionSync) => {
+  buttonOptionSync[serviceCardElemId].forEach((optionElemId) => {
     let elemToWatch = document.querySelectorAll('.service__item');
 
     let currentCard = [...elemToWatch].filter((activeCard) => {
@@ -128,6 +136,9 @@ const removeActiveClassFromCurrentCard = (cardElemId, buttonOptionSync) => {
     })
   })
 }
+//=====================================  selection to buttons end =====================================
+
+//=====================================  removing to buttons start =====================================
 
 const removeSelectionFromServiceButton = (clickedElem) => {
   if (!clickedElem.classList.contains('service__button')) {
@@ -155,14 +166,14 @@ const removeLinkDescriptionWithServiceButton = () => {
     'service__button-lawn' : ['service__lawn-care-content0']
   };
   
-  const cardElemId = getDomActiveButtonKeyEqualToElemId(currentButtonDomKey, buttonOptionSync);
+  const serviceCardElemId = getDomActiveButtonKeyEqualToElemId(currentButtonDomKey, buttonOptionSync);
   
   if (service__optionsContainer.outerHTML.includes('service__button_active') &&
       (activeButtonClassCount.length === 1)
   ) {
-    addClassActiveToItems();
+    addClassActiveToServiceItems();
 
-    removeActiveClassFromCurrentCard(cardElemId, buttonOptionSync);
+    removeActiveClassFromCurrentServiceCard(serviceCardElemId, buttonOptionSync);
     // console.log(`done 1 remove from 1 card`);
   }
 
@@ -178,9 +189,9 @@ const removeLinkDescriptionWithServiceButton = () => {
 
 }
 const getDomActiveButtonKeyEqualToElemId = (currentButtonDomKey, buttonOptionSync) => {
-  return Object.keys(buttonOptionSync).filter((cardElemId) => {
-    if (cardElemId === currentButtonDomKey?.dataset.buttonId) {
-      return cardElemId;
+  return Object.keys(buttonOptionSync).filter((serviceCardElemId) => {
+    if (serviceCardElemId === currentButtonDomKey?.dataset.buttonId) {
+      return serviceCardElemId;
     }
     }
   )};
@@ -191,5 +202,8 @@ const unblurAllCards = () => {
     activeElem.classList.remove('service__item_active');
   })
 }
+//=====================================  removing to buttons start =====================================
 
-//Service section js functions end
+//=================================================================================================================
+//    Service section js functions end
+//=================================================================================================================
