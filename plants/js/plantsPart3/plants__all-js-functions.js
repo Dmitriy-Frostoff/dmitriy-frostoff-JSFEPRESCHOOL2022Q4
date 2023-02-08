@@ -9,7 +9,11 @@ window.onload = function () {
   pricesOptionsButtonHandler();
 }
 
-//Service section js functions start
+//=================================================================================================================
+//    Service section js functions start
+//=================================================================================================================
+
+//=====================================  add Handler to the buttons =====================================
 
 const serviceOptionsButtonHandler = () => {
   const service__optionsContainer = document.querySelector('.container.service__container');
@@ -45,6 +49,8 @@ const serviceOptionsButtonHandler = () => {
   })
   };
 
+//=====================================  add handler to buttons end  =====================================
+
 const compareIdsClickedElemAllServiceButtons = (elem) => {
   let clickedElem = event.target;
   if (elem.dataset.buttonId === clickedElem.dataset.buttonId) {
@@ -57,6 +63,9 @@ const getActiveServiceButton = (item) => {
     return item;
   }
 }
+
+//=====================================  selection to buttons start =====================================
+
 
 const addSelectionToServiceButton = (clickedElem) => {
   if (!clickedElem.classList.contains('service__button')) {
@@ -83,16 +92,16 @@ const linkDescriptionWithServiceButton = () => {
     'service__button-lawn' : ['service__lawn-care-content0']
   };
   
-  const cardElemId = getKeyEqualToElemId(clickedElem, buttonOptionSync);
+  const serviceCardElemId = getServiceKeyEqualToElemId(clickedElem, buttonOptionSync);
   
   if (activeButtonClassCount.length === 1) {
-    addClassActiveToItems();
+    addClassActiveToServiceItems();
 
-    removeActiveClassFromCurrentCard(cardElemId, buttonOptionSync);
+    removeActiveClassFromCurrentServiceCard(serviceCardElemId, buttonOptionSync);
   }
 
   else if (activeButtonClassCount.length === 2) {
-    removeActiveClassFromCurrentCard(cardElemId, buttonOptionSync);
+    removeActiveClassFromCurrentServiceCard(serviceCardElemId, buttonOptionSync);
   }
   
   else {
@@ -101,24 +110,24 @@ const linkDescriptionWithServiceButton = () => {
   
 }
 
-let getKeyEqualToElemId = (clickedElem, buttonOptionSync) => {
-  return Object.keys(buttonOptionSync).filter((cardElemId) => {
-    if (cardElemId === clickedElem.dataset.buttonId) {
-      return cardElemId;
+const getServiceKeyEqualToElemId = (clickedElem, buttonOptionSync) => {
+  return Object.keys(buttonOptionSync).filter((serviceCardElemId) => {
+    if (serviceCardElemId === clickedElem.dataset.buttonId) {
+      return serviceCardElemId;
     }
     }
   )};
 
 
-const addClassActiveToItems = () => {
+const addClassActiveToServiceItems = () => {
   let elemToWatch = document.querySelectorAll('.service__item');
   elemToWatch.forEach((card) => {
     card.classList.add('service__item_active');
   })
 }
 
-const removeActiveClassFromCurrentCard = (cardElemId, buttonOptionSync) => {
-  buttonOptionSync[cardElemId].forEach((optionElemId) => {
+const removeActiveClassFromCurrentServiceCard = (serviceCardElemId, buttonOptionSync) => {
+  buttonOptionSync[serviceCardElemId].forEach((optionElemId) => {
     let elemToWatch = document.querySelectorAll('.service__item');
 
     let currentCard = [...elemToWatch].filter((activeCard) => {
@@ -131,6 +140,9 @@ const removeActiveClassFromCurrentCard = (cardElemId, buttonOptionSync) => {
     })
   })
 }
+//=====================================  selection to buttons end =====================================
+
+//=====================================  removing to buttons start =====================================
 
 const removeSelectionFromServiceButton = (clickedElem) => {
   if (!clickedElem.classList.contains('service__button')) {
@@ -158,14 +170,14 @@ const removeLinkDescriptionWithServiceButton = () => {
     'service__button-lawn' : ['service__lawn-care-content0']
   };
   
-  const cardElemId = getDomActiveButtonKeyEqualToElemId(currentButtonDomKey, buttonOptionSync);
+  const serviceCardElemId = getDomActiveButtonKeyEqualToElemId(currentButtonDomKey, buttonOptionSync);
   
   if (service__optionsContainer.outerHTML.includes('service__button_active') &&
       (activeButtonClassCount.length === 1)
   ) {
-    addClassActiveToItems();
+    addClassActiveToServiceItems();
 
-    removeActiveClassFromCurrentCard(cardElemId, buttonOptionSync);
+    removeActiveClassFromCurrentServiceCard(serviceCardElemId, buttonOptionSync);
     // console.log(`done 1 remove from 1 card`);
   }
 
@@ -181,9 +193,9 @@ const removeLinkDescriptionWithServiceButton = () => {
 
 }
 const getDomActiveButtonKeyEqualToElemId = (currentButtonDomKey, buttonOptionSync) => {
-  return Object.keys(buttonOptionSync).filter((cardElemId) => {
-    if (cardElemId === currentButtonDomKey?.dataset.buttonId) {
-      return cardElemId;
+  return Object.keys(buttonOptionSync).filter((serviceCardElemId) => {
+    if (serviceCardElemId === currentButtonDomKey?.dataset.buttonId) {
+      return serviceCardElemId;
     }
     }
   )};
@@ -194,10 +206,17 @@ const unblurAllCards = () => {
     activeElem.classList.remove('service__item_active');
   })
 }
+//=====================================  removing to buttons start =====================================
 
-//Service section js functions end
+//=================================================================================================================
+//    Service section js functions end
+//=================================================================================================================
 
-//Prices section js functions start
+//=================================================================================================================
+//    Prices section js functions start
+//=================================================================================================================
+
+//=====================================  add handler to buttons start  =====================================
 
 const pricesOptionsButtonHandler = () => {
   const prices__optionsContainer = document.querySelector('.prices__options-container');
@@ -237,6 +256,7 @@ const pricesOptionsButtonHandler = () => {
     }
   })
   };
+//=====================================  add handler to buttons end  =====================================
 
 const compareIdsClickedElemAllAccordionButtons = (elem) => {
   let clickedElem = event.target;
@@ -250,6 +270,8 @@ const getActiveButton = (item) => {
     return item;
   }
 }
+
+//=====================================  remove selections from buttons start  =====================================
 
 const removeSelectionFromPricesButton = () => {
   const prices__AllButtonsOfAccordion = document.querySelectorAll('.prices__accordion-button');
@@ -268,15 +290,31 @@ const removeSelectionFromPricesButton = () => {
     item.classList.add('prices__elem_hidden');
   })
 }
+//=====================================  remove selections from buttons end  =====================================
 
+//=====================================  add selections to buttons start  =====================================
 
 const addSelectionToPricesButton = (clickedElem) => {
-  const prices__AllButtonsOfAccordion = document.querySelectorAll('.prices__accordion-button');
+  if (!clickedElem.classList.contains('prices__accordion-button')) {
+    return;
+  }
 
-  const prices__accordionButton = document.querySelector('.prices__accordion-button');
-  const prices__accordionButton_active = document.querySelector('.prices__accordion-button_active');
-  const prices__accordionButton_vector = document.querySelector('.prices__accordion-button_vector');
-  const prices__accordionDescriptionContainer = document.querySelector('.prices__accordion-description-container');
+  clickedElem.classList.add('prices__accordion-button_active');
+
+  linkDescriptionWithPricesButton();
+
+  linkArrowsWithPricesButton();
+
+}
+//=====================================  add linking descriptions with buttons start  =====================================
+
+// Yeah!!!)))) I refactored this func!))))))))))) :smile:
+const linkDescriptionWithPricesButton = () => {
+  let clickedElem = event.target;
+  
+  if (!clickedElem.classList.contains('prices__accordion-button')) {
+    return;
+  }
 
   const buttonDescriptionSync = {
     'prices__accordion-button1' : 'button-description1',
@@ -284,50 +322,74 @@ const addSelectionToPricesButton = (clickedElem) => {
     'prices__accordion-button3' : 'button-description3'
   };
 
-  const buttonArrowsSync = {
-    'prices__accordion-button1' : 'button-vector1',
-    'prices__accordion-button2' : 'button-vector2',
-    'prices__accordion-button3' : 'button-vector3'
-  };
-
-  if ( clickedElem.classList != 'prices__accordion-button' ) {
-    return;
-  }
-
   clickedElem.classList.add('prices__accordion-button_active');
 
-  linkDescriptionWithPricesButton(clickedElem, buttonDescriptionSync);
+  const pricesCardElemId = getPricesKeyEqualToElemId(clickedElem, buttonDescriptionSync);
 
-  linkArrowsWithPricesButton(clickedElem, buttonArrowsSync);
-
+  removeClassHiddenFromPricesItems(pricesCardElemId, buttonDescriptionSync);
+  
 }
 
-//I created this code for 4 ours!!! But it hard to read, so it need to be refactored((((((((( ::crying::
-
-const linkDescriptionWithPricesButton = (clickedElem, buttonDescriptionSync) => {
-  Object.keys(buttonDescriptionSync).forEach( (elem) => {
-    if (elem === clickedElem.dataset.buttonId) {
-      let elemWatch = document.querySelectorAll('.prices__accordion-description-container');
-      elemWatch.forEach((item) => {
-        if (item.dataset.button__descriptionId === buttonDescriptionSync[elem]) {
-          return item.classList.remove('prices__elem_hidden');
-        }
-      })
+const getPricesKeyEqualToElemId = (clickedElem, buttonDescriptionSync) => {
+  return Object.keys(buttonDescriptionSync).filter((pricesCardElemId) => {
+    if (pricesCardElemId === clickedElem.dataset.buttonId) {
+      return pricesCardElemId;
     }
-  })
-}
-
-const linkArrowsWithPricesButton = (clickedElem, buttonArrowsSync) => {
-  Object.keys(buttonArrowsSync).forEach( (elem) => {
-    if (elem === clickedElem.dataset.buttonId) {
-      let elemWatch = document.querySelectorAll('.prices__accordion-button_vector');
-      elemWatch.forEach((item) => {
-        if (item.dataset.button__vectorId === buttonArrowsSync[elem]) {
-          return item.classList.add('prices__accordion-button_vector-active');
-        }
-      })
     }
-  })
-}
+  )};
 
-//Prices section js functions end
+const removeClassHiddenFromPricesItems = (pricesCardElemId, buttonDescriptionSync) => {
+    let pricesElemToWatch = document.querySelectorAll('.prices__accordion-description-container');
+
+    pricesElemToWatch.forEach((item) => {
+      if (item.getAttribute('data-button__description-id').includes(buttonDescriptionSync[pricesCardElemId])) {
+        item.classList.remove('prices__elem_hidden');
+      }
+    });
+    }
+//=====================================  add linking descriptions with buttons end  =====================================
+
+//=====================================  add linking arrows with buttons start  =====================================
+    
+  // Yeah!!!)))) I refactored this func!))))))))))) :smile:
+  const linkArrowsWithPricesButton = () => {
+    let clickedElem = event.target;
+    
+    if (!clickedElem.classList.contains('prices__accordion-button')) {
+      return;
+    }
+  
+    const buttonArrowsSync = {
+      'prices__accordion-button1' : 'button-vector1',
+      'prices__accordion-button2' : 'button-vector2',
+      'prices__accordion-button3' : 'button-vector3'
+    };
+  
+    const pricesCardVectorElemId = getPricesKeyVectorEqualToElemId(clickedElem, buttonArrowsSync);
+  
+    addClassActiveToPricesVectors(pricesCardVectorElemId, buttonArrowsSync);
+    
+  }
+  
+  const getPricesKeyVectorEqualToElemId = (clickedElem, buttonArrowsSync) => {
+    return Object.keys(buttonArrowsSync).filter((pricesCardVectorElemId) => {
+      if (pricesCardVectorElemId === clickedElem.dataset.buttonId) {
+        return pricesCardVectorElemId;
+      }
+      }
+    )};
+  
+  const addClassActiveToPricesVectors = (pricesCardVectorElemId, buttonArrowsSync) => {
+      let pricesElemToWatch = document.querySelectorAll('.prices__accordion-button_vector');
+  
+      pricesElemToWatch.forEach((item) => {
+        if (item.getAttribute('data-button__vector-id').includes(buttonArrowsSync[pricesCardVectorElemId])) {
+          item.classList.add('prices__accordion-button_vector-active');
+        }
+      });
+      }
+//=====================================  add linking arrows with buttons end  =====================================
+
+//=================================================================================================================
+//    Prices section js functions end
+//=================================================================================================================
