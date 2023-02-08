@@ -142,7 +142,7 @@ const removeActiveClassFromCurrentServiceCard = (serviceCardElemId, buttonOption
 }
 //=====================================  selection to buttons end =====================================
 
-//=====================================  removing to buttons start =====================================
+//=====================================  removing selection from buttons start =====================================
 
 const removeSelectionFromServiceButton = (clickedElem) => {
   if (!clickedElem.classList.contains('service__button')) {
@@ -206,11 +206,13 @@ const unblurAllCards = () => {
     activeElem.classList.remove('service__item_active');
   })
 }
-//=====================================  removing to buttons start =====================================
+//=====================================  removing selection from buttons end =====================================
 
 //=================================================================================================================
 //    Service section js functions end
 //=================================================================================================================
+
+
 
 //=================================================================================================================
 //    Prices section js functions start
@@ -287,7 +289,7 @@ const removeSelectionFromPricesButton = () => {
   })
 
   prices__allDescriptionContainerOfAccordion.forEach((item) => {
-    item.classList.add('prices__elem_hidden');
+    item.classList.add('elem_hidden');
   })
 }
 //=====================================  remove selections from buttons end  =====================================
@@ -343,7 +345,7 @@ const removeClassHiddenFromPricesItems = (pricesCardElemId, buttonDescriptionSyn
 
     pricesElemToWatch.forEach((item) => {
       if (item.getAttribute('data-button__description-id').includes(buttonDescriptionSync[pricesCardElemId])) {
-        item.classList.remove('prices__elem_hidden');
+        item.classList.remove('elem_hidden');
       }
     });
     }
