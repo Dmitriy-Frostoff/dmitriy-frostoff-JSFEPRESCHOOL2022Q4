@@ -2,183 +2,233 @@
 
 window.onload = function () {
 
-  pricesOptionsButtonHandler();
+  contactsOptionsButtonHandler();
 
 }
 
 //=================================================================================================================
 //    Contacts section js functions start
 //=================================================================================================================
-//TODO change names and adopt functions for contats section drop menu
 //=====================================  add handler to buttons start  =====================================
 
-const pricesOptionsButtonHandler = () => {
-  const prices__optionsContainer = document.querySelector('.prices__options-container');
+const contactsOptionsButtonHandler = () => {
+  const contacts__functionalWrapper = document.querySelector('.contacts__functional-wrapper');
 
-  prices__optionsContainer.addEventListener('click', (event) => {
-    const prices__AllButtonsOfAccordion = document.querySelectorAll('.prices__accordion-button');
+  contacts__functionalWrapper.addEventListener('click', (event) => {
+    const contacts__AllCityButtons = document.querySelectorAll('.contacts__city-button');
 
     let clickedElem = event.target;
 
-    if ( clickedElem.closest('.prices__accordion-button') ) {
+    if ( clickedElem.closest('.contacts__city-button')) {
 
-      if ( !clickedElem.classList.contains('prices__accordion-button_active') &&
-        !prices__optionsContainer.outerHTML.includes('prices__accordion-button_active')
+      if ( !clickedElem.classList.contains('contacts__city-button_active') &&
+        !contacts__functionalWrapper.outerHTML.includes('contacts__city-button_active')
       ) {
-        // console.log(`1 do addSelectionToPricesButton`);
-        addSelectionToPricesButton(clickedElem);
+        // console.log(`1 do addSelectionToCityButton`);
+        addSelectionToCityButton(clickedElem);
+        
       }
 
-      else if ((clickedElem.dataset.buttonId === [...prices__AllButtonsOfAccordion].find(compareIdsClickedElemAllAccordionButtons)?.dataset.buttonId) &&
-        clickedElem.classList.contains('prices__accordion-button_active')
+      else if ((clickedElem.dataset.buttonId === [...contacts__AllCityButtons].find(compareIdsClickedElemAllCityButtons)?.dataset.buttonId) &&
+        clickedElem.classList.contains('contacts__city-button_active')
         ) {
-          // console.log(`2 do removeSelectionFromPricesButton`);
-          removeSelectionFromPricesButton();
-      }
-
-      
-      else if ( !(clickedElem.dataset.buttonId === [...prices__AllButtonsOfAccordion].find(getActiveButton)?.dataset.buttonId) && 
-        prices__optionsContainer.outerHTML.includes( 'prices__accordion-button_active')) {
-          // console.log(`3 do removeSelection addSelection`);
-          removeSelectionFromPricesButton();
-          addSelectionToPricesButton(clickedElem);
+          // console.log(`2 do removeSelectionFromCityButton`);
+          removeSelectionFromCityButton();
       }
 
       else {
         console.log(`nothing`);
       }
     }
+    if ( clickedElem.closest('.contacts__city-item')) {
+      removeAllAdresses();
+
+      linkCityItemWithButtonText(clickedElem);
+
+      linkDescriptionWithCityButton(clickedElem);
+
+      removeSelectionFromCityButton();
+    }
+    
   })
   };
 //=====================================  add handler to buttons end  =====================================
 
-const compareIdsClickedElemAllAccordionButtons = (elem) => {
+const compareIdsClickedElemAllCityButtons = (elem) => {
   let clickedElem = event.target;
   if (elem.dataset.buttonId === clickedElem.dataset.buttonId) {
     return elem.dataset.buttonId;
   }
 }
 
-const getActiveButton = (item) => {
-  if (item.getAttribute('class').includes('prices__accordion-button_active')) {
-    return item;
-  }
-}
-
 //=====================================  remove selections from buttons start  =====================================
 
-const removeSelectionFromPricesButton = () => {
-  const prices__AllButtonsOfAccordion = document.querySelectorAll('.prices__accordion-button');
-  const prices__AllVectorsOfAccordionButtons = document.querySelectorAll('.prices__accordion-button_vector');
-  const prices__allDescriptionContainerOfAccordion = document.querySelectorAll('.prices__accordion-description-container');
+const removeSelectionFromCityButton = () => {
+  const contacts__AllCityButtons = document.querySelectorAll('.contacts__city-button');
+  const contacts__AllVectorsOfCityButtons = document.querySelectorAll('.contacts__city-button_vector');
+  const contacts__allAdressContainersOfCity = document.querySelectorAll('.contacts__adress-container');
+  const contacts__allCityLists = document.querySelectorAll('.contacts__city-list');
   
-  prices__AllButtonsOfAccordion.forEach((button) => {
-    button.classList.remove('prices__accordion-button_active');
+  contacts__AllCityButtons.forEach((button) => {
+    button.classList.remove('contacts__city-button_active');
   })
   
-  prices__AllVectorsOfAccordionButtons.forEach((button) => {
-    button.classList.remove('prices__accordion-button_vector-active');
+  contacts__AllVectorsOfCityButtons.forEach((button) => {
+    button.classList.remove('contacts__city-button_vector-active');
   })
 
-  prices__allDescriptionContainerOfAccordion.forEach((item) => {
-    item.classList.add('prices__elem_hidden');
+  contacts__allCityLists.forEach(item => {
+    item.classList.add('elem_hidden');
   })
+
 }
 //=====================================  remove selections from buttons end  =====================================
 
+//=====================================  remove all adresses start  =====================================
+
+const removeAllAdresses = () => {
+  const contacts__AllAdresses = document.querySelectorAll('.contacts__adress-container');
+  
+  contacts__AllAdresses.forEach(item => {
+    item.classList.add('elem_hidden');
+  })
+
+}
+//=====================================  remove all adresses end  =====================================
+
 //=====================================  add selections to buttons start  =====================================
 
-const addSelectionToPricesButton = (clickedElem) => {
-  if (!clickedElem.classList.contains('prices__accordion-button')) {
+const addSelectionToCityButton = (clickedElem) => {
+  if (!clickedElem.classList.contains('contacts__city-button')) {
     return;
   }
 
-  clickedElem.classList.add('prices__accordion-button_active');
+  clickedElem.classList.add('contacts__city-button_active');
 
-  linkDescriptionWithPricesButton();
+  linkArrowsWithCityButton();
 
-  linkArrowsWithPricesButton();
-
+  showCityList();
 }
-//=====================================  add linking descriptions with buttons start  =====================================
+
+//=====================================  add selections to buttons end  =====================================
+
+//=====================================  show city list under button start  =====================================
+
+const showCityList = () => {
+  let clickedElem = event.target;
+  let cityList = document.querySelector('.contacts__city-list');
+
+  if (!clickedElem.classList.contains('contacts__city-button')) {
+    return;
+  }
+
+  cityList.classList.remove('elem_hidden');
+}
+//=====================================  show city list under button end  =====================================
+
+//=====================================  add linking city with adress start  =====================================
 
 // Yeah!!!)))) I refactored this func!))))))))))) :smile:
-const linkDescriptionWithPricesButton = () => {
+const linkCityItemWithButtonText = () => {
   let clickedElem = event.target;
   
-  if (!clickedElem.classList.contains('prices__accordion-button')) {
+  if (!clickedElem.classList.contains('contacts__city-item')) {
     return;
   }
 
-  const buttonDescriptionSync = {
-    'prices__accordion-button1' : 'button-description1',
-    'prices__accordion-button2' : 'button-description2',
-    'prices__accordion-button3' : 'button-description3'
-  };
-
-  clickedElem.classList.add('prices__accordion-button_active');
-
-  const pricesCardElemId = getPricesKeyEqualToElemId(clickedElem, buttonDescriptionSync);
-
-  removeClassHiddenFromPricesItems(pricesCardElemId, buttonDescriptionSync);
+  replaceButtonTextWithChosenCity(clickedElem);
   
 }
 
-const getPricesKeyEqualToElemId = (clickedElem, buttonDescriptionSync) => {
-  return Object.keys(buttonDescriptionSync).filter((pricesCardElemId) => {
-    if (pricesCardElemId === clickedElem.dataset.buttonId) {
-      return pricesCardElemId;
+const replaceButtonTextWithChosenCity = (clickedElem) => {
+  const contacts__cityButtons = document.querySelectorAll('.contacts__city-button');
+
+  const cityButtonActive = [...contacts__cityButtons].find(item => item.classList.contains('contacts__city-button_active'));
+
+  cityButtonActive.textContent = clickedElem.textContent;
+}
+
+const linkDescriptionWithCityButton = () => {
+  let clickedElem = event.target;
+  
+  if (!clickedElem.classList.contains('contacts__city-item')) {
+    return;
+  }
+
+  const buttonCitySync = {
+    'contacts__city-item1' : 'contacts__city-button1',
+    'contacts__city-item2' : 'contacts__city-button1',
+    'contacts__city-item3' : 'contacts__city-button1',
+    'contacts__city-item4' : 'contacts__city-button1'
+  };
+
+  const buttonAdressSync = {
+    'contacts__city-item1' : 'contacts__adress-container1',
+    'contacts__city-item2' : 'contacts__adress-container2',
+    'contacts__city-item3' : 'contacts__adress-container3',
+    'contacts__city-item4' : 'contacts__adress-container4'
+  };
+
+  const contacts = getCityKeyEqualToElemId(clickedElem, buttonCitySync);
+  
+  const contactsCityElemId = getCityKeyEqualToElemId(clickedElem, buttonAdressSync);
+  
+  removeClassHiddenFromCityItems(contactsCityElemId, buttonAdressSync);
+  
+}
+
+const getCityKeyEqualToElemId = (clickedElem, buttonAdressSync) => {
+  return Object.keys(buttonAdressSync).filter((contactsCityElemId) => {
+    if (contactsCityElemId === clickedElem.dataset.cityId) {
+      return contactsCityElemId;
     }
     }
   )};
 
-const removeClassHiddenFromPricesItems = (pricesCardElemId, buttonDescriptionSync) => {
-    let pricesElemToWatch = document.querySelectorAll('.prices__accordion-description-container');
+const removeClassHiddenFromCityItems = (contactsCityElemId, buttonAdressSync) => {
+    let contactsElemToWatch = document.querySelectorAll('.contacts__adress-container');
 
-    pricesElemToWatch.forEach((item) => {
-      if (item.getAttribute('data-button__description-id').includes(buttonDescriptionSync[pricesCardElemId])) {
-        item.classList.remove('prices__elem_hidden');
+    contactsElemToWatch.forEach((item) => {
+      if (item.getAttribute('data-button__description-id').includes(buttonAdressSync[contactsCityElemId])) {
+        item.classList.remove('elem_hidden');
       }
     });
     }
-//=====================================  add linking descriptions with buttons end  =====================================
+//=====================================  add linking city with adress end  =====================================
 
 //=====================================  add linking arrows with buttons start  =====================================
     
   // Yeah!!!)))) I refactored this func!))))))))))) :smile:
-  const linkArrowsWithPricesButton = () => {
+  const linkArrowsWithCityButton = () => {
     let clickedElem = event.target;
     
-    if (!clickedElem.classList.contains('prices__accordion-button')) {
+    if (!clickedElem.classList.contains('contacts__city-button')) {
       return;
     }
   
-    const buttonArrowsSync = {
-      'prices__accordion-button1' : 'button-vector1',
-      'prices__accordion-button2' : 'button-vector2',
-      'prices__accordion-button3' : 'button-vector3'
+    const buttonCityArrowsSync = {
+      'contacts__city-button1' : 'button-city-vector1'
     };
   
-    const pricesCardVectorElemId = getPricesKeyVectorEqualToElemId(clickedElem, buttonArrowsSync);
+    const buttonCityArrowsSyncKey = getCityButtonKeyEqualClickedElemButtonId(clickedElem, buttonCityArrowsSync);
   
-    addClassActiveToPricesVectors(pricesCardVectorElemId, buttonArrowsSync);
+    addClassActiveToCityVectors(buttonCityArrowsSyncKey, buttonCityArrowsSync);
     
   }
   
-  const getPricesKeyVectorEqualToElemId = (clickedElem, buttonArrowsSync) => {
-    return Object.keys(buttonArrowsSync).filter((pricesCardVectorElemId) => {
-      if (pricesCardVectorElemId === clickedElem.dataset.buttonId) {
-        return pricesCardVectorElemId;
+  const getCityButtonKeyEqualClickedElemButtonId = (clickedElem, buttonCityArrowsSync) => {
+    return Object.keys(buttonCityArrowsSync).filter((buttonCityArrowsSyncKey) => {
+      if (buttonCityArrowsSyncKey === clickedElem.dataset.buttonId) {
+        return buttonCityArrowsSyncKey;
       }
       }
     )};
   
-  const addClassActiveToPricesVectors = (pricesCardVectorElemId, buttonArrowsSync) => {
-      let pricesElemToWatch = document.querySelectorAll('.prices__accordion-button_vector');
-  
-      pricesElemToWatch.forEach((item) => {
-        if (item.getAttribute('data-button__vector-id').includes(buttonArrowsSync[pricesCardVectorElemId])) {
-          item.classList.add('prices__accordion-button_vector-active');
+  const addClassActiveToCityVectors = (buttonCityArrowsSyncKey, buttonCityArrowsSync) => {
+      let contactsElemToWatch = document.querySelectorAll('.contacts__city-button_vector');
+      contactsElemToWatch.forEach((item) => {
+        if (item.getAttribute('data-button__vector-id').includes(buttonCityArrowsSync[buttonCityArrowsSyncKey])) {
+          item.classList.add('contacts__city-button_vector-active');
         }
       });
       }
