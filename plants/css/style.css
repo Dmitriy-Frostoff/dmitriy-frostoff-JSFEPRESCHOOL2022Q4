@@ -2633,7 +2633,7 @@ body {
 
 }
 
-.prices__accordion-order {
+.prices__accordion-order-wrapper {
     /* Position */
     
     /* block-model */
@@ -2641,11 +2641,33 @@ body {
     height: 25px;
     display: block;
     margin: 12px 0 12px;
-    padding: 3px 20px;
+
     /* Typography */
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
+
+    /* Decoration */
+
+    /* Animation */
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    /* Various */
+
+}
+
+.prices__accordion-order {
+    /* Position */
+    
+    /* block-model */
+    width: inherit;
+    height: inherit;
+    display: block;
+    /* margin: 12px 0 12px; */
+    padding: 3px 20px;
+    /* Typography */
     color: #717171;
     text-decoration: none;
     /* Decoration */
@@ -2662,15 +2684,17 @@ body {
 }
 
 .prices__accordion-order:active,
-.prices__accordion-order_hovered {
+.prices__accordion-order:hover {
     /* Position */
 
     /* block-model */
     
     /* Typography */
     color:#FFFFFF;
+
     /* Decoration */
     background: #E06733;
+
     /* Animation */
     transition-property: all;
     transition-duration: 0.5s;
@@ -2862,7 +2886,7 @@ body {
     color: #000000;
     /* Decoration */
     background: #D6E7D2;
-    cursor: default;
+    cursor: pointer;
     /* Animation */
 
     /* Various */
@@ -4166,7 +4190,6 @@ body {
     /* block-model */
     width: 122px;
     height: 26px;
-    padding: 7px 29px;
     margin: 24px 0 0 129px;
     /* Typography */
     font-family: 'Inika';
@@ -4207,15 +4230,19 @@ body {
     /* Position */
 
     /* block-model */
+    width: inherit;
+    height: inherit;
+    display: block;
+    padding: 7px 29px;
 
     /* Typography */
     color: #717171;
     text-decoration: none;
     
     /* Decoration */
-
-    /* Animation */
     
+    /* Animation */
+    transition: all 0.5s ease 0s;
     /* Various */
 
 }
@@ -4226,13 +4253,17 @@ body {
     /* block-model */
     
     /* Typography */
+    color:#FFFFFF;
 
     /* Decoration */
-    background: #C1E698;
-    border: 1px solid #D6E7D2;
-    border-radius: 0px;
+   
+    /* Decoration */
+    background: #E06733;
+    border: 0px solid #D6E7D2;
+    border-radius: inherit;
     cursor: pointer;
     /* Animation */
+    transition: all 0.5s ease 0s;
 
     /* Various */
 
