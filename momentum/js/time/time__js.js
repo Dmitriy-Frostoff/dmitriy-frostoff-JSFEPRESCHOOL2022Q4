@@ -19,7 +19,7 @@ const timeAndDateFunc = () => {
   const showDate = () => {
     const date = new Date();
 
-    const options = { weekday: 'long', month: 'long', day: 'numeric', timeZoneName: 'short'};
+    const options = { weekday: 'long', month: 'long', day: 'numeric'};
 
     dateElement.textContent =  date.toLocaleDateString('ru-RU', options);
   }
@@ -31,7 +31,7 @@ const timeAndDateFunc = () => {
   
     showDate();
 
-    setTimeout(showTime, 1000);
+    showTime.timerID = setTimeout(showTime, 1000);
   }
 
   showTime();
