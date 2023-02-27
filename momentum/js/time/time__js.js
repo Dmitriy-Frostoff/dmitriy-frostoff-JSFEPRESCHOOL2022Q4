@@ -8,6 +8,33 @@ window.onload = function () {
 }
 
 //=================================================================================================================
+//    Adding eventlisteners start
+//=================================================================================================================
+const userNameToLocalStorageHandler = () => {
+  const greetingUserNameElement = document.querySelector('.name');
+
+  const setUserNameToLocalStorage = () => {
+    localStorage.setItem('userName', greetingUserNameElement.value);
+  }
+  
+  const getUserNameToLocalStorage = () => {
+    if (localStorage.getItem('userName')) {
+      greetingUserNameElement.value = localStorage.getItem('userName');
+    }
+  }
+
+  window.addEventListener('beforeunload', setUserNameToLocalStorage);
+
+  window.addEventListener('load', getUserNameToLocalStorage);
+}
+
+userNameToLocalStorageHandler();
+
+//=================================================================================================================
+//    Adding eventlisteners end
+//=================================================================================================================
+
+//=================================================================================================================
 //    Time js functions start
 //=================================================================================================================
 
@@ -18,19 +45,17 @@ const timeAndDateFunc = () => {
   
   const greetingTextElement = document.querySelector('.greeting');
 
-  const greetingNameElement = document.querySelector('.name');
-
   const getGreetingDependOnTime = (date) => {
     let currentHour = date.getHours();
 
     switch (true) {
       case (currentHour > 0 && currentHour < 6):
         return `Good night,`;
-      case (currentHour > 6 && currentHour < 12):
+      case (currentHour >= 6 && currentHour < 12):
         return `Good morning,`;
-      case (currentHour > 12 && currentHour < 18):
+      case (currentHour >= 12 && currentHour < 18):
         return `Good afternoon,`;
-      case (currentHour > 18 && currentHour < 24):
+      case (currentHour >= 18 && currentHour < 24):
         return `Good evening,`;
     }
   }
@@ -51,11 +76,11 @@ const timeAndDateFunc = () => {
     const date = new Date();
   
     timeElement.textContent =  date.toLocaleTimeString();
-  
-    showDate();
 
     setGreetingIntoElement(greetingTextElement, getGreetingDependOnTime, date);
 
+    showDate();
+    
     showTime.timerID = setTimeout(showTime, 1000);
   }
 
