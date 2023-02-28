@@ -44,25 +44,6 @@ const timeAndDateFunc = () => {
   const dateElement = document.querySelector('.date');
   
   const greetingTextElement = document.querySelector('.greeting');
-
-  const getGreetingDependOnTime = (date) => {
-    let currentHour = date.getHours();
-
-    switch (true) {
-      case (currentHour > 0 && currentHour < 6):
-        return `Good night,`;
-      case (currentHour >= 6 && currentHour < 12):
-        return `Good morning,`;
-      case (currentHour >= 12 && currentHour < 18):
-        return `Good afternoon,`;
-      case (currentHour >= 18 && currentHour < 24):
-        return `Good evening,`;
-    }
-  }
-
-  const setGreetingIntoElement = (greetingTextElement, getGreetingDependOnTime, date) => {
-    greetingTextElement.textContent = getGreetingDependOnTime(date);
-  }
   
   const showDate = () => {
     const date = new Date();
@@ -77,6 +58,7 @@ const timeAndDateFunc = () => {
   
     timeElement.textContent =  date.toLocaleTimeString();
 
+    //real time greeting function execution
     setGreetingIntoElement(greetingTextElement, getGreetingDependOnTime, date);
 
     showDate();
@@ -88,4 +70,31 @@ const timeAndDateFunc = () => {
 }
 //=================================================================================================================
 //    Time js functions end
+//=================================================================================================================
+
+//=================================================================================================================
+//    Greeting js functions start
+//=================================================================================================================
+
+const getGreetingDependOnTime = (date) => {
+  let currentHour = date.getHours();
+
+  switch (true) {
+    case (currentHour > 0 && currentHour < 6):
+      return `Good night,`;
+    case (currentHour >= 6 && currentHour < 12):
+      return `Good morning,`;
+    case (currentHour >= 12 && currentHour < 18):
+      return `Good afternoon,`;
+    case (currentHour >= 18 && currentHour < 24):
+      return `Good evening,`;
+  }
+}
+
+const setGreetingIntoElement = (greetingTextElement, getGreetingDependOnTime, date) => {
+  greetingTextElement.textContent = getGreetingDependOnTime(date);
+}
+
+//=================================================================================================================
+//    Greeting js functions end
 //=================================================================================================================
