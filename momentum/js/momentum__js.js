@@ -76,17 +76,30 @@ const timeAndDateFunc = () => {
 //    Greeting js functions start
 //=================================================================================================================
 
-const getGreetingDependOnTime = (date) => {
+const getTimeOfDay = (date) => {
   let currentHour = date.getHours();
-
+  
   switch (true) {
     case (currentHour > 0 && currentHour < 6):
-      return `Good night,`;
+      return 'night';
     case (currentHour >= 6 && currentHour < 12):
-      return `Good morning,`;
+      return `morning`;
     case (currentHour >= 12 && currentHour < 18):
-      return `Good afternoon,`;
+      return `afternoon`;
     case (currentHour >= 18 && currentHour < 24):
+      return `evening`;
+  }
+}
+
+const getGreetingDependOnTime = (date) => {
+  switch (true) {
+    case (getTimeOfDay(date) === 'night'):
+      return `Good night,`;
+    case (getTimeOfDay(date) === 'morning'):
+      return `Good morning,`;
+    case (getTimeOfDay(date) === 'afternoon'):
+      return `Good afternoon,`;
+    case (getTimeOfDay(date) === 'evening'):
       return `Good evening,`;
   }
 }
