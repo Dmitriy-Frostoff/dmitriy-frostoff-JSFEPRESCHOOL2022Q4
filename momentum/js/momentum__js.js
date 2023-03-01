@@ -4,7 +4,6 @@ window.onload = function () {
 
   //time
   timeAndDateFunc();
-
 }
 
 //=================================================================================================================
@@ -127,8 +126,25 @@ const greetingFunc = (greetingTextElement, getTimeOfDay, date) => {
 //    Background-image js functions start
 //=================================================================================================================
 
+// get css class func start 
+const getCSSclass = (desiredСlass) => {
+  const cssRules = document.styleSheets[1].cssRules;
+
+  let classToChange;
+  
+  for (let i in cssRules) {
+    if (cssRules[i].selectorText === desiredСlass) {
+      classToChange = cssRules[i];
+    }
+  }
+  
+  return classToChange;
+}
+// get css class func end 
+
 const backgroundImageFunction = (date) => {
-  const bodyElement = document.querySelector('body');
+  // const bodyElement = document.querySelector('.body');
+  const bodyElement = getCSSclass('.body');
 
   let randomNumber;
   
