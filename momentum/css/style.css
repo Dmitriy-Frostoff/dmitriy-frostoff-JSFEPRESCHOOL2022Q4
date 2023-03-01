@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   color: #fff;
   text-align: center;
-  background: url("../assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);
+  background: center/cover, no-repeat, rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   transition: background-image 1s ease-in-out;
 }
@@ -95,12 +95,16 @@ body {
   opacity: 1;
 }
 
+.slider-icon:hover{
+  transform: scale(1.1);
+}
+
 .player-icon:active,
 .slider-icon:active,
 .change-quote:active {
   border: 0;
   outline: 0;  
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 
 .play {
