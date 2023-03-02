@@ -149,6 +149,29 @@
   column-gap: 12px;
 }
 
+.temperature {
+  padding: 0 0 10px;
+}
+
+.temperature::before {
+  display: inline-block;
+  padding: 0px 5px 0px 0px;
+  content: url(../assets/svg/weather/temperature.svg);
+}
+
+.wind::before {
+  display: inline-block;
+  padding: 0px 10px 0px 0px;
+  content: url(../assets/svg/weather/wind.svg);
+}
+
+.humidity::before {
+  display: inline-block;
+  padding: 0px 11px 0px 0px;
+  content: url(../assets/svg/weather/humidity.svg);
+}
+
+
 .weather-icon {
   font-size: 44px;
 }
