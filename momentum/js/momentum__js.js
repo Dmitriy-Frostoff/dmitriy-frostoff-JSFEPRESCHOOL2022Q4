@@ -4,30 +4,30 @@ window.onload = function () {
 
   //time
   timeAndDateFunc();
-}
 
+}
 //=================================================================================================================
 //    Adding eventlisteners start
 //=================================================================================================================
-const userNameToLocalStorageHandler = () => {
-  const greetingUserNameElement = document.querySelector('.name');
+const elementToStorageHandler = (elementName, elementClass) => {
+  const storageElement = document.querySelector(elementClass);
 
-  const setUserNameToLocalStorage = () => {
-    localStorage.setItem('userName', greetingUserNameElement.value);
+  const setElementToStorage = () => {
+    localStorage.setItem(elementName, storageElement.value);
   }
   
-  const getUserNameToLocalStorage = () => {
-    if (localStorage.getItem('userName')) {
-      greetingUserNameElement.value = localStorage.getItem('userName');
+  const getElementToStorage = () => {
+    if (localStorage.getItem(elementName)) {
+      storageElement.value = localStorage.getItem(elementName);
     }
   }
 
-  window.addEventListener('beforeunload', setUserNameToLocalStorage);
+  window.addEventListener('beforeunload', setElementToStorage);
 
-  window.addEventListener('load', getUserNameToLocalStorage);
+  window.addEventListener('load', getElementToStorage);
 }
 
-userNameToLocalStorageHandler();
+elementToStorageHandler('userName', '.name');
 
 //=================================================================================================================
 //    Adding eventlisteners end
@@ -39,11 +39,8 @@ userNameToLocalStorageHandler();
 
 const timeAndDateFunc = () => {
   const timeElement = document.querySelector('.time');
-
   const dateElement = document.querySelector('.date');
-  
   const greetingTextElement = document.querySelector('.greeting');
-
   const date = new Date();
 
   const showDate = () => {
@@ -208,4 +205,71 @@ const backgroundImageFunction = (date) => {
 
 //=================================================================================================================
 //    Background-image js functions end
+//=================================================================================================================
+
+//=================================================================================================================
+//    Weather widget js functions start
+//=================================================================================================================
+elementToStorageHandler('weatherCity', '.city');
+
+const weatherWidget = () => {
+  const weatherIcon = document.querySelector('.weather-icon');
+  const weatherError = document.querySelector('.weather-error');
+  const weatherTemperature = document.querySelector('.temperature');
+  const weatherDescription = document.querySelector('.weather-description');
+  const weatherWind = document.querySelector('.wind');
+  const weatherHumidity = document.querySelector('.humidity');
+
+  weatherError.textContent = '';
+
+  const weatherCity = document.querySelector('.city');
+
+  weatherCity.value = localStorage.getItem('weatherCity') || 'Minsk';
+
+  const weatherCityHandle = () => {
+    weatherCity.addEventListener('change', getWeatherBroadcast);
+  }
+
+  const checkCityName = (weatherServerResponse, weatherError) => {
+    if (weatherServerResponse.ok === false) {
+      weatherIcon.className = 'weather-icon owf';
+      
+      weatherTemperature.textContent = '';
+      weatherDescription.textContent = '';
+      weatherWind.textContent = '';
+      weatherHumidity.textContent = '';
+      weatherError.textContent = `cod: "404", error! city not found`;
+      
+      return true;
+    }
+  }
+
+  weatherCityHandle();
+
+  async function getWeatherBroadcast() {
+    const weatherServerUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherCity.value}&lang=en&appid=c9fe9a9161cee013cb4ea81b5d66ed5d&units=metric`;
+    const weatherServerResponse = await fetch(weatherServerUrl);
+    const weatherData = await weatherServerResponse.json();
+
+    if (checkCityName(weatherServerResponse, weatherError)) {
+      return;
+    }
+    
+    weatherIcon.className = 'weather-icon owf';
+    weatherIcon.classList.add(`owf-${weatherData.weather[0].id}`);
+
+    weatherError.textContent = '';
+    
+    weatherTemperature.textContent = `${Math.round(weatherData.main.temp)} °C`;
+    weatherDescription.textContent = weatherData.weather[0].description;
+    weatherWind.textContent = `${Math.round(weatherData.wind.speed)} m/sec`;
+    weatherHumidity.textContent = `${weatherData.main.humidity} %`;
+  }
+  
+  getWeatherBroadcast();
+}
+
+weatherWidget();
+//=================================================================================================================
+//    Weather widget js functions end
 //=================================================================================================================
