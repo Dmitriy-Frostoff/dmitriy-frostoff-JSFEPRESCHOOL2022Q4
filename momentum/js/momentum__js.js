@@ -139,19 +139,20 @@ const getCSSclass = (desiredСlass) => {
 }
 // get css class func end 
 
+// get random number and assign it to the element func start 
+const getRandomNumberFromRangeInclusive = (min, max) => {
+  min = Math.ceil(min);
+  
+  max = Math.floor(max);
+
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+// get random number and assign it to the element func end 
+
 const backgroundImageFunction = (date) => {
-  // const bodyElement = document.querySelector('.body');
   const bodyElement = getCSSclass('.body');
 
   let randomNumber;
-  
-  const getRandomNumberFromRangeInclusive = (min, max) => {
-    min = Math.ceil(min);
-    
-    max = Math.floor(max);
-  
-    randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
-  }
 
   const imageSlideNext = () => {
     ++randomNumber;
@@ -196,7 +197,7 @@ const backgroundImageFunction = (date) => {
     //add event listener to the Buttons end
   }
 
-  getRandomNumberFromRangeInclusive(1, 20);
+  randomNumber = getRandomNumberFromRangeInclusive(1, 20);
 
   imageSliderButtonHandler();
 
@@ -239,7 +240,6 @@ const weatherWidget = () => {
       weatherWind.textContent = '';
       weatherHumidity.textContent = '';
       weatherError.textContent = `cod: "404", error! city not found`;
-      
       return true;
     }
   }
@@ -272,4 +272,41 @@ const weatherWidget = () => {
 weatherWidget();
 //=================================================================================================================
 //    Weather widget js functions end
+//=================================================================================================================
+
+//=================================================================================================================
+//    Quote of the day widget js functions start
+//=================================================================================================================
+const quoteOfTheDayWidget = () => {
+  const quoteElement = document.querySelector('.quote');
+  const authorElement = document.querySelector('.author');
+  const changeQuoteButton = document.querySelector('.change-quote');
+
+  const quotesAndAuthorsRU = 'quotesAndAuthorsRU';
+  const quotesAndAuthorsEN = 'quotesAndAuthorsEN';
+
+  const getQuoteAndAuthor = (quotesAndAuthorsJsonData) => {
+    let randomIndex = getRandomNumberFromRangeInclusive(0, quotesAndAuthorsJsonData.length-1);
+
+    quoteElement.textContent = quotesAndAuthorsJsonData[randomIndex]['quote'];
+    authorElement.textContent = quotesAndAuthorsJsonData[randomIndex]['author'];
+  }
+  
+  async function getQuotesAndAuthorsFromJSON() {  
+    const quotesAndAuthorsJsonUrl = `./js/${quotesAndAuthorsEN}.json`;
+    const response = await fetch(quotesAndAuthorsJsonUrl);
+    const quotesAndAuthorsJsonData = await response.json();
+
+    getQuoteAndAuthor(quotesAndAuthorsJsonData);
+  }
+
+  getQuotesAndAuthorsFromJSON();
+
+  changeQuoteButton.addEventListener('click', quoteOfTheDayWidget);
+}
+
+quoteOfTheDayWidget();
+
+//=================================================================================================================
+//    Quote of the day widget js functions end
 //=================================================================================================================

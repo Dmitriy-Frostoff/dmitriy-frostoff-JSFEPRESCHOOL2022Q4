@@ -300,14 +300,45 @@
 .change-quote {
   margin-bottom: 30px;
   background-image: url("../assets/svg/reload.svg");  
+  transition: all 0.25s ease-in;
+}
+
+.change-quote:hover {
+  transform: rotate(45deg);
+  transition: all 0.25s ease-in;
+}
+
+.change-quote:active {
+  transform: rotate(60deg);
+  transition: rotate 0.05s ease-in;
+  transition: scale 0.1s ease-in;
+}
+
+.change-quote:active:hover {
+  transform: rotate(120deg);
+  transition: rotate 0.05s ease-in;
+  transition: scale 0.1s ease-in;
 }
 
 .quote {
   min-height: 32px;
 }
 
+.quote:before {
+  content: "\"";
+}
+
+.quote:after {
+  content: "\"";
+}
+
 .author {
+  display: inline-block;
+  margin: 10px 0px;
+  padding: 10px 0px;
   min-height: 20px;
+  font-style: italic;
+  border-top: 1px solid #ffffff;
 }
 
 @media (max-width: 768px) {
